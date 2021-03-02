@@ -1,0 +1,36 @@
+<app-header [headerImg]="headerImage"></app-header>
+
+<app-container>
+	<div class="container">
+		<div class="row">
+			<h4 class="tab">ELSA SYSTEM D.O.O. BEOGRAD</h4>
+			<p class="arh">
+				{{'ElsaSystemDescription' | translate}}
+			</p>
+		</div>
+		<div class="row">
+			<div class="col-sm-6">
+				<div class="content one">
+						<ul>
+							<li><i class="fas fa-address-card fa-fw"></i>{{'Adresa' | translate}}: Ul. Prote Jeftimija Ivanovića br. 69</li>
+							<li><i class="fas fa-building fa-fw"></i>{{'Grad' | translate}}: Ugrinovci-Zemun</li>
+							<li><i class="fas fa-envelope fa-fw"></i>{{'Email' | translate}}: elsasystem@eunet.rs</li>
+
+						</ul>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="content two">
+					<ul>
+						<li><i class="fas fa-fax fa-fw"></i>{{'Fax' | translate}}: 011/346 72 23</li>
+						<li><i class="fas fa-mobile fa-fw"></i>{{'Telefon' | translate}}:  011/346 88 90</li>
+						<li><i class="fas fa-mobile fa-fw"></i>{{'Mobilni' | translate}}: 063/305 500</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</app-container>
+<app-ribbon style="dark">{{'Location' | translate}}</app-ribbon>
+<app-map [Iscontact]="true"></app-map>

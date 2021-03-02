@@ -1,0 +1,219 @@
+<div class="container-fluid">
+	<div class="container">
+		<div class="row">
+			<p *ngIf="showMessage" [ngClass]="messageClass">
+				{{message}}
+			</p>
+
+			<div class="col-sm-6">
+				<button class="btn btn-gold" (click)="toogled1()">VILA ELSA I <i class="fa fa-chevron-down"></i> </button>
+				<table class="table" *ngIf="toogle">
+					<thead>
+					<tr>
+						<th>Br.</th>
+						<th>Površina</th>
+						<th>Broj spavaćih soba</th>
+						<th>Status</th>
+					</tr>
+					</thead>
+					<tbody>
+					<tr *ngFor="let a of apartmentsVilaElsa1; let i = index;" (click)="toggleCollapseLeft(i)">
+
+						<td> {{a?.id}}</td>
+						<td>{{a?.area}}m2</td>
+						<td>{{a?.roomsNumber}}</td>
+						<td
+							[class.r]="a?.status === 'Rezervisano'"
+							[class.s]="a?.status === 'Prodato'"
+							[class.a]="a?.status === 'Slobodno'"
+
+						>{{a?.status}} <i class="fa fa-chevron-down"></i>
+							<div class="edit" *ngIf="i == visibleRowLeft">
+								<span class="reserved" (click)="updateApartmentStatus(a.id, 'Rezervisano', i)">Rezervisano</span>
+								<span class="sold" (click)="updateApartmentStatus(a.id,'Prodato', i)">Prodato</span>
+								<span class="available" (click)="updateApartmentStatus(a.id,'Slobodno', i)">Slobodno</span>
+							</div></td>
+					</tr>
+					</tbody>
+				</table>
+				<div class="col-sm-12" *ngIf="toogle">
+					<div class="pagination">
+						<div class="total">
+							UKUPNO APARTMANA <span>{{totalItems}}</span>
+						</div>
+						<pagination
+							(pageChanged)="goToPage1($event)"
+							[rotate]="true"
+							[maxSize]="3"
+							[boundaryLinks]="true"
+							[previousText]="'&lsaquo;'"
+							[nextText]="'&rsaquo;'"
+							[firstText]="'&laquo;'"
+							[lastText]="'&raquo;'"
+							[itemsPerPage]="pager.pageSize"
+							[totalItems]="totalItems">
+						</pagination>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<button class="btn btn-gold" (click)="toogledVilla2()">VILA ELSA II <i class="fa fa-chevron-down"></i> </button>
+				<table class="table" *ngIf="toogle2">
+					<thead>
+					<tr>
+						<th>Br.</th>
+						<th>Površina</th>
+						<th>Broj spavacih soba</th>
+						<th>Status</th>
+					</tr>
+					</thead>
+					<tbody>
+					<tr *ngFor="let apartment of apartmentsVilaElsa2; let i = index" (click)="toggleCollapseRight(i)">
+						<td> {{apartment?.apartmentNumber}}</td>
+						<td>{{apartment?.area}}m2</td>
+						<td>{{apartment?.roomsNumber}}</td>
+						<td
+							[class.r]="apartment?.status === 'Rezervisano'"
+							[class.s]="apartment?.status === 'Prodato'"
+							[class.a]="apartment?.status === 'Slobodno'">
+							{{apartment.status}} <i class="fa fa-chevron-down"></i>
+							<div class="edit" *ngIf="i == visibleRowRight">
+								<span class="reserved" (click)="updateApartmentStatus(apartment.id, 'Rezervisano', i)">Rezervisano</span>
+								<span class="sold" (click)="updateApartmentStatus(apartment.id,'Prodato', i)">Prodato</span>
+								<span class="available" (click)="updateApartmentStatus(apartment.id,'Slobodno', i)">Slobodno</span>
+							</div>
+						</td>
+					</tr>
+					</tbody>
+				</table>
+				<div class="col-sm-12" *ngIf="toogle2">
+					<div class="pagination">
+						<div class="total">
+							UKUPNO APARTMANA <span>{{totalItems}}</span>
+						</div>
+						<pagination
+							(pageChanged)="goToPage2($event)"
+							[rotate]="true"
+							[maxSize]="3"
+							[boundaryLinks]="true"
+							[previousText]="'&lsaquo;'"
+							[nextText]="'&rsaquo;'"
+							[firstText]="'&laquo;'"
+							[lastText]="'&raquo;'"
+							[itemsPerPage]="pager.pageSize"
+							[totalItems]="totalItems">
+						</pagination>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container two">
+		<div class="row">
+			<p *ngIf="showMessage" [ngClass]="messageClass">
+				{{message}}
+			</p>
+
+			<div class="col-sm-6">
+				<button class="btn btn-gold" (click)="toogledGarage1()">GARAŽA VILA ELSA I <i class="fa fa-chevron-down"></i> </button>
+				<table class="table" *ngIf="toogleGarage">
+					<thead>
+					<tr>
+						<th>Broj</th>
+						<th>Parking mesto</th>
+						<th>Povrsina</th>
+						<th>Status</th>
+					</tr>
+					</thead>
+					<tbody>
+					<tr  *ngFor="let garage of garageVilaElsa1; let i = index" (click)="toggleCollapseLeft(i)">
+						<th>{{garage?.garageNumber}}</th>
+						<td>{{garage?.name}}</td>
+						<td>{{garage?.area}}m²</td>
+						<td
+							[class.r]="garage?.status === 'Rezervisano'"
+							[class.s]="garage?.status === 'Prodato'"
+							[class.a]="garage?.status === 'Slobodno'">
+							{{garage.status}} <i class="fa fa-chevron-down"></i>
+							<div class="edit" *ngIf="i == visibleRowLeft">
+								<span class="reserved" (click)="updateGarageStatus(garage?.id, 'Rezervisano', i)">Rezervisano</span>
+								<span class="sold" (click)="updateGarageStatus(garage?.id,'Prodato', i)">Prodato</span>
+								<span class="available" (click)="updateGarageStatus(garage?.id,'Slobodno', i)">Slobodno</span>
+							</div>
+						</td>
+					</tr>
+					</tbody>
+				</table>
+				<div class="col-sm-12" *ngIf="toogleGarage">
+					<div class="pagination">
+						<div class="total">
+							UKUPNO GARAŽA <span>{{totalItems}}</span>
+						</div>
+						<pagination
+							(pageChanged)="goToGaragePage($event)"
+							[rotate]="true"
+							[maxSize]="3"
+							[boundaryLinks]="true"
+							[previousText]="'&lsaquo;'"
+							[nextText]="'&rsaquo;'"
+							[firstText]="'&laquo;'"
+							[lastText]="'&raquo;'"
+							[itemsPerPage]="pager.pageSize"
+							[totalItems]="totalItems">
+						</pagination>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<button class="btn btn-gold" (click)="toogledGarage2()">GARAŽA VILA ELSA II <i class="fa fa-chevron-down"></i> </button>
+				<table class="table" *ngIf="toogleGarage2">
+					<thead>
+					<tr>
+						<th>Broj</th>
+						<th>Parking mesto</th>
+						<th>Povrsina</th>
+						<th>Status</th>
+					</tr>
+					</thead>
+					<tbody>
+					<tr *ngFor="let g of garageVilaElsa1; let i = index" (click)="toggleCollapseRight(i)">
+						<th>{{g?.garageNumber}}</th>
+						<td>{{g?.name}}</td>
+						<td>{{g?.area}}m²</td>
+						<td
+							[class.r]="g?.status === 'Rezervisano'"
+							[class.s]="g?.status === 'Prodato'"
+							[class.a]="g?.status === 'Slobodno'">
+							{{g.status}} <i class="fa fa-chevron-down"></i>
+							<div class="edit" *ngIf="i == visibleRowRight">
+								<span class="reserved" (click)="updateGarageStatus(g?.id, 'Rezervisano', i)">Rezervisano</span>
+								<span class="sold" (click)="updateGarageStatus(g?.id,'Prodato', i)">Prodato</span>
+								<span class="available" (click)="updateGarageStatus(g?.id,'Slobodno', i)">Slobodno</span>
+							</div>
+						</td>
+					</tr>
+					</tbody>
+				</table>
+				<div class="col-sm-12" *ngIf="toogleGarage2">
+					<div class="pagination">
+						<div class="total">
+							UKUPNO GARAŽA <span>{{totalItems}}</span>
+						</div>
+						<pagination
+							(pageChanged)="goToGaragePage2($event)"
+							[rotate]="true"
+							[maxSize]="3"
+							[boundaryLinks]="true"
+							[previousText]="'&lsaquo;'"
+							[nextText]="'&rsaquo;'"
+							[firstText]="'&laquo;'"
+							[lastText]="'&raquo;'"
+							[itemsPerPage]="pager.pageSize"
+							[totalItems]="totalItems">
+						</pagination>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+</div>

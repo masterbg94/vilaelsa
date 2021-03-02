@@ -1,0 +1,228 @@
+@import "../../../styles/palette";
+@import "~bootstrap/scss/bootstrap.scss";
+
+.container-fluid{
+	display: flex;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	min-height: 100vh;
+	background: white;
+	font-family: Montserrat, sans-serif;
+	.container{
+		display: flex;
+		align-self: center;
+		max-width: 1200px;
+		flex-direction: column;
+			&.two{
+				display: flex;
+				flex-direction: column !important;
+				padding: 0;
+				margin-top: 20px;
+			}
+
+		.row {
+			width: 100%;
+			.col-sm-6{
+
+			}
+			.btn {
+				width: 100%;
+				padding: 15px 20px;
+				border-radius: 0 !important;
+				line-height: 16px;
+				background: $ve-black;
+				color: white;
+				outline: none !important;
+				&:focus{
+					outline: none;
+					box-shadow: none;
+				}
+				.fa{
+					float: right;
+				}
+
+
+			}
+			.table {
+				border-top: 0 !important;
+				margin-bottom: 0;
+				td, th, thead {
+					border: none !important;
+					position: relative;
+					border: 0;
+					font-size: 14px;
+					font-weight: 300;
+					font-family: Montserrat, sans-serif;
+					.edit {
+						width: 100%;
+						display: flex;
+						flex-direction: column;
+						height: 100%;
+						margin-top: 10px;
+
+						span {
+							width: 100%;
+							margin: 5px 0;
+							padding: 5px 10px;
+							color: white;
+							&.reserved {
+								background: $ve-black;
+								transition: .3s;
+								&:hover{
+									transition: .3s;
+									background: orange;
+								}
+							}
+							&.sold {
+								background:$ve-black;
+								transition: .3s;
+							}
+							&:hover{
+								transition: .3s;
+								background: $ve-red;
+							}
+							&.available {
+								background: $ve-black;
+								transition: .3s;
+								&:hover{
+									transition: .3s;
+									background: $ve-green;
+								}
+							}
+						}
+					}
+					img {
+						display: none;
+						transition: .2s;
+						position: absolute;
+						top: 10px;
+						left: 30px;
+						height: 50%;
+						z-index: 10;
+					}
+				}
+				thead {
+					tr {
+						color: $ve-black;
+						background: $ve-gold;
+						font-size: 14px;
+						font-weight: 300 !important;
+						font-family: Roboto, sans-serif !important;
+					}
+				}
+				tbody {
+					position: relative;
+					tr {
+						background: $ve-gray;
+						color: $ve-black;
+						font-size: 14px;
+						font-weight: 300;
+						font-family: Montserrat, sans-serif, sans-serif;
+						cursor: pointer;
+						.fa{
+							float: right;
+							padding-right: 10px;
+
+						}
+						.r{
+							color: orange;
+						}
+						.s{
+							color: $ve-red;
+						}
+						.a{
+							color: $ve-green;
+						}
+
+
+						&:nth-child(odd) {
+
+							background: $ve-gray-light;
+						}
+					}
+				}
+			}
+		}
+
+	}
+}
+.col-sm-12{
+	padding: 0;
+	margin: 0;
+	background: $ve-black;
+	.pagination{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		.total{
+			font-family: Montserrat, sans-serif;
+			font-size: 14px;
+			font-weight: 300;
+			color: $ve-gray-light;
+			padding: 10px 0;
+		}
+	}
+}
+pagination{
+
+	/deep/
+	{
+		.page-item.active .page-link{
+			background: $ve-gold !important;
+			color: $ve-black;
+		}
+		ul.pagination {
+			display: flex;
+			justify-content: center;
+			margin-bottom: 0;
+			padding: 0 0 20px 0;
+
+			li{
+				a.page-link{
+					background: $ve-black;
+					border: 0;
+					color: $ve-gold;
+					box-shadow: none !important;
+				}
+			}
+		}
+	}
+}
+
+.notShow{
+	display: none;
+}
+
+@media screen and (max-width: 570px) {
+	.btn {
+		margin-top: 40px;
+	}
+}
+
+		.alert {
+			position: fixed;
+			left: 20%;
+			right: 20%;
+			top: 100px;
+			z-index: 100;
+			text-align: center;
+			font-family: Montserrat,sans-serif;
+			font-size: 18px;
+			color: white;
+			font-weight: 300;
+			border-radius: 0;
+			background: white;
+
+			&-success {
+				color: $ve-green;
+				border: 2px solid $ve-green;
+			}
+
+			&-danger {
+				color: $ve-red;
+				border:2px solid $ve-red;
+			}
+		}
+
+

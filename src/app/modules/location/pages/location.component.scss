@@ -1,0 +1,141 @@
+@import "~bootstrap/scss/bootstrap.scss";
+@import "../../../styles/palette";
+
+carousel{
+	/deep/{
+		.carousel-caption.d-none.d-md-block{
+
+			font-family: Montserrat, sans-serif;
+			font-size: 14px;
+			font-weight: 300;
+			display: flex !important;
+			align-self: center;
+			align-items: center;
+			justify-content: center;
+			height: 100%;
+			color: white;
+			top:8px;
+			.text{
+				background: rgba($ve-black, .7);
+				width: 100%;
+				display: flex;
+				flex-direction: column;
+				padding: 20px;
+				justify-content: center;
+				align-items: center;
+				p{
+					display: flex;
+				}
+				a{
+					color: $ve-gold;
+					text-decoration: none;
+					text-underline: none;
+					display: flex;
+				}
+			}
+
+
+		}
+		.carousel-inner {
+			position: relative !important;
+		}
+		.carousel-item {
+			/* Force to always be block */
+			display: flex !important;
+			position: absolute;
+			transform: translateX(100%);
+			opacity: 1;
+			transition:  0.8s;
+			visibility: hidden;
+			.carousel-caption.d-none.d-md-block{
+				transform: translateY(100%);
+				opacity: 1;
+				transition:  0.8s;
+				visibility: hidden;
+			}
+		}
+
+		.carousel-item.active {
+			position: relative;
+			transform: translateX(0);
+			visibility: visible ;
+			opacity: 1;
+			.carousel-caption.d-none.d-md-block{
+				transform: translateY(0);
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+		.carousel-indicators li {
+			width: 15px;
+			height: 15px;
+			background: $ve-black;
+			cursor: pointer;
+
+			&.active{
+				background: $ve-gold;
+				border: 2px solid $ve-black;
+			}
+		}
+
+
+		.carousel-indicators{
+			z-index: 2 !important;
+		}
+		.carousel-control-prev-icon{
+			background-image: url("../../../../assets/images/prev-icon.png");
+			width: 55px;
+			height: 55px;
+			cursor: pointer;
+			&:hover{
+				transform: scale(1.1);
+				transition: 0.4s;
+			}
+		}
+		.carousel-control-next-icon{
+			background-image: url("../../../../assets/images/foward-icon.png");
+			width: 55px;
+			height: 55px;
+			cursor: pointer;
+			z-index: 5;
+			position: relative;
+			&:hover{
+				transform: scale(1.1);
+				transition: 0.4s;
+			}
+		}
+	}
+}
+
+p.location{
+	-webkit-column-count: 2;
+	-moz-column-count: 2;
+	column-count: 2;
+	-webkit-column-gap: 40px;
+	-moz-column-gap: 40px;
+	column-gap: 40px;
+	font-size: 14px;
+	font-family: Montserrat, sans-serif;
+	font-weight: 300;
+	color: #95989A;
+	padding: 40px 40px 15px 15px;
+	margin-bottom: 20px;
+}
+
+@media screen and (max-width: 570px) {
+	p{
+		column-count: 1 !important;
+		padding: 20px 5px !important;
+		text-align: center;
+	}
+	carousel{
+		/deep/{
+			img{
+				height: 200px !important;
+			}
+			.carousel-indicators li{
+				display: none;
+			}
+		}
+	}
+}

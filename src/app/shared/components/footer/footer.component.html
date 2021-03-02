@@ -1,0 +1,126 @@
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="col-sm-4">
+						<div class="left">
+							<h1>
+								{{'Elsa' | translate}} {{'Apartments' | translate}}
+							</h1>
+							<ul>
+								<li>
+									<a routerLink="location">{{'LocationLower' | translate }}</a>
+								</li>
+								<li>
+									<a routerLink="building/1" href="">{{'VillaElsaILower' | translate }}</a>
+								</li>
+								<li>
+									<a routerLink="building/2">{{'VillaElsaIILower' | translate }}</a>
+								</li>
+							</ul>
+						</div>
+					<div class="right">
+						<h1>
+							{{'ElsaSystem' | translate}}
+						</h1>
+						<ul>
+							<li>
+								<a routerLink="investitor">{{'Onama' | translate}}</a>
+							</li>
+							<li>
+								<a target="_blank" href="http://elsasystem.com">{{'Karijera' | translate}}</a>
+							</li>
+							<li><a routerLink="contact">{{'Kontakt' | translate}}</a>
+							</li>
+						</ul>
+					</div>
+					<div class="subscribe">
+						<form>
+							<input type="email" name="email" placeholder="" />
+							<button type="submit">{{'Subscribe' | translate}}</button>
+						</form>
+					</div>
+				</div>
+				<div class="col-sm-8">
+					<div class="one">
+						<h1>
+							{{'Okolina' | translate}}
+						</h1>
+						<ul>
+							<li>
+								<a target="_blank" href="http://zlatibortornik.com">{{'SkicentarTornik' | translate}}</a>
+							</li>
+							<li>
+								<a target="_blank" href="http://tara-planina.com">{{ 'Tara' | translate }}</a>
+							</li>
+							<li>
+								<a target="_blank" href="http://sirogojno.rs">{{'Sirogojno' | translate}} </a>
+							</li>
+							<li>
+								<a target="_blank" href="http://mecavnik.info">{{'Mećavnik' | translate}}</a>
+							</li>
+							<li>
+								<a target="_blank" href="http://uvac.org.rs">{{ 'KanjonUvac' | translate }}</a>
+							</li>
+						</ul>
+					</div>
+					<div class="two news">
+						<div class="lang text">
+							<p>{{'ChooseLang' | translate}}</p>
+						</div>
+						<ul class="lang">
+							<li class="lng"  ngbDropdown #myDrop="ngbDropdown" aria-expanded = false style="background: transparent" >
+
+								<a class="nav-link"  role="button" ngbDropdownToggle style="cursor: pointer;user-select: none;display: flex"
+								   (click)="navbarCollapsed"
+								>
+									<img class="flag" src="{{currentImg}}">
+									{{currentLng | translate}}
+									<i class="fas fa-caret-up"></i>
+								</a>
+								<div ngbDropdownMenu class="dropdown-menu show lng" aria-labelledby="dropdownManual" (click)="navbarCollapsed = false" style="background: white">
+									<button class="dropdown-item lang" *ngFor="let l of lng" (click)="setLng(l.jezik, l.img, l.activeLang)" style="background: transparent;">{{ l.jezik | translate}} <img class="flag" [src]="l.img"></button>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="three social">
+						<div class="social">
+							<div class="circule f">
+								<i class="fab fa-facebook-f"></i>
+							</div>
+							<div class="circule t">
+								<i class="fab fa-twitter"></i>
+							</div>
+							<div class="circule y">
+								<i class="fab fa-youtube"></i>
+							</div>
+							<div class="circule g">
+								<i class="fab fa-google-plus-g"></i>
+							</div>
+							<div class="circule p">
+								<i class="fab fa-pinterest-p"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="container powerd">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="col-sm-6 copy">
+						Copyright 2018, Elsa System doo. All Rights Reserved
+					</div>
+					<div class="col-sm-6 powerd">
+						Powered by Limit Consolidated
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</footer>

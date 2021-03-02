@@ -1,0 +1,20 @@
+<carousel  style="height:100%;">
+	<slide *ngFor="let image of images">
+		<img [src]="'../../../../assets/images/lokacija/' + image.name  + '.png'"  style="display: block; width: 100%;height: 100%;">
+		<div class="carousel-caption d-none d-md-block">
+			<div class="text">
+				<p>{{image.text}}</p>
+				<a target="_blank" href="http://{{image.link}}">{{image.link}}</a>
+			</div>
+		</div>
+</slide>
+</carousel>
+<app-ribbon style="dark">{{'ZlatiborOkolina' | translate}}</app-ribbon>
+
+<app-container>
+	<p class="location">
+		{{'land' | translate}}
+	</p>
+</app-container>
+<app-ribbon style="dark">{{'Location' | translate}}</app-ribbon>
+<app-zlatibor-map></app-zlatibor-map>

@@ -1,0 +1,58 @@
+
+<sebm-google-map [scrollwheel] = false style="width: 100%;height: 350px"
+	[latitude]="lat"
+	[longitude]="lng"
+	[zoom]="zoom"
+	[disableDefaultUI]="false"
+	[zoomControl]="false">
+
+	<sebm-google-map-marker [iconUrl]="'../../../assets/images/marker-elsa.png'"
+		*ngFor="let m of markers; let i = index"
+		(markerClick)="clickedMarker(m.label, i)"
+		[latitude]="m.lat"
+		[longitude]="m.lng"
+		[label]="m.label"
+		[markerDraggable]="m.draggable"
+		(dragEnd)="markerDragEnd(m, $event)">
+
+		<sebm-google-map-info-window  *ngIf="m.lat == 43.6862898">
+			<strong style="text-align: center">
+				Zlatibor<br>
+			</strong>
+		</sebm-google-map-info-window>
+		<sebm-google-map-info-window  *ngIf="m.lat == 43.8483476">
+			<strong style="text-align: center">
+				Tara<br>
+			</strong>
+		</sebm-google-map-info-window>
+		<sebm-google-map-info-window *ngIf="m.lat == 43.6883808">
+			<strong style="text-align: center" >
+				Sirogojno<br>
+			</strong>
+		</sebm-google-map-info-window>
+		<sebm-google-map-info-window *ngIf="m.lat == 43.3409073">
+			<strong style="text-align: center" >
+				Kanjon Uvac<br>
+			</strong>
+		</sebm-google-map-info-window>
+		<sebm-google-map-info-window *ngIf="m.lat == 43.8197375">
+			<strong style="text-align: center" >
+				Mećavnik, Mokra Gora<br>
+			</strong>
+		</sebm-google-map-info-window>
+		<sebm-google-map-info-window *ngIf="m.lat == 43.7927392">
+			<strong style="text-align: center">
+				Sarganska Osmica<br>
+			</strong>
+		</sebm-google-map-info-window>
+		<sebm-google-map-info-window *ngIf="m.lat == 43.8617773">
+			<strong style="text-align: center">
+				Kremna<br>
+			</strong>
+		</sebm-google-map-info-window>
+
+	</sebm-google-map-marker>
+
+</sebm-google-map>
+
+

@@ -1,0 +1,255 @@
+@import "~bootstrap/scss/bootstrap.scss";
+@import "../../../styles/palette";
+
+
+h1 {
+	font-size: 24px ;
+	font-family: Roboto, sans-serif;
+	font-weight: 300;
+	color: $ve-black;
+	margin: 0;
+	text-align: center;
+	padding: 40px 0;
+}
+
+li.select.dropdown{
+	display: flex;
+	border: 1px solid #95989A;
+	background: $ve-gray-light;
+	font-size: 14px;
+	font-family: Montserrat,sans-serif;
+	font-weight: 300;
+	color: $ve-black;
+
+	a.nav-link.dropdown-toggle::after {
+		display: none;
+	}
+	.nav-link.dropdown-toggle{
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		&.placeholder{
+			color: #95989A !important;
+		}
+		.fas{
+			color: #95989A;
+			display: flex;
+			align-items: center;
+			font-size: 16px;
+			cursor: pointer;
+		}
+	}
+
+}
+.dropdown-menu.select.show{
+	width: 100%;
+	border: 1px solid #95989A;
+	margin: 0;
+	border-radius: 0;
+	font-family: Montserrat,sans-serif;
+	font-weight: 300;
+	font-size: 14px;
+	padding: 0;
+	.dropdown-item.select{
+		background: $ve-gray-light;
+		color: $ve-black;
+		padding-left: 15px;
+		cursor: pointer;
+		outline: none;
+		&:nth-child(odd){
+			background: $ve-gray;
+		}
+		&:hover {
+			background: $ve-gold;
+			transition: 0.3s;
+
+		}
+	}
+}
+p.subtitle {
+	font-size: 14px;
+	font-weight: 300;
+	color: $ve-black;
+	text-align: center;
+	margin: auto;
+	padding: 40px 0 20px 0;
+}
+
+app-alert{
+	/deep/{
+		.alert{
+			transition: 0.5s;
+			width: 80%;
+			margin: 0 auto;
+		}
+
+	}
+
+}
+
+p.form {
+	color: #C95151;
+	font-size: 14px;
+	font-weight: 300;
+	font-family: Roboto, sans-serif;
+	padding: 15px 0;
+	margin: 0;
+}
+p.success {
+	color: $ve-green;
+	font-size: 14px;
+	font-weight: 300;
+	font-family: Montserrat, sans-serif;
+	margin-top: 20px;
+	transition: 0.2s;
+	width: 100%;
+	text-align: center;
+	padding: 20px;
+	border: 1px solid $ve-green;
+}
+.container-fluid {
+	background: white;
+}
+.col-sm-12.first{
+	display: flex;
+	flex-direction: row;
+}
+.col-sm-12.second{
+	display: flex;
+	flex-direction: row;
+}
+.col-sm-12.tree{
+	padding: 20px 30px;
+}
+.col-sm-6{
+	padding: 20px;
+ }
+
+
+.form-control {
+	font-family: Montserrat, sans-serif;
+	font-size: 16px;
+	color:$ve-black;
+	background: $ve-gray-light;
+	outline: none !important;
+	background: $ve-gray-light;
+}
+input[type=text] {
+	background: $ve-gray-light;
+	color: $ve-black;
+	font-family: Montserrat, sans-serif;
+	font-weight: 100;
+	border: 1px solid #95989A;
+}
+input::placeholder {
+	color: #95989A !important;
+	font-weight: 300;
+	font-family: Montserrat, sans-serif;
+	font-size: 14px;
+
+}
+.form-control {
+	border: 1px solid $ve-gray;
+	border-radius: 0;
+	color: $ve-black;
+	transition: .2s;
+	&:focus {
+		background: $ve-gray-light;
+		outline: none !important;
+		color: $ve-black;
+		transition: .2s;
+		border: 1px solid #95989A;
+	}
+}
+textarea.form-control{
+			background: $ve-gray-light;
+			font-weight: 100;
+			font-family: Roboto, sans-serif;
+			border: 1px solid #95989A;
+	resize: none;
+}
+textarea, input {
+	outline: none !important;
+	-webkit-box-shadow: none !important;
+	-moz-box-shadow: none !important;
+	box-shadow: none !important;
+}
+
+textarea.ng-invalid.ng-touched{
+	border: 1px solid #C95151;
+}
+input.ng-invalid.ng-touched{
+	border: 1px solid #C95151;
+}
+textarea::placeholder {
+	color: #95989A !important;
+	font-weight: 300;
+	font-family: Montserrat,sans-serif;
+	font-size: 14px;
+}
+
+.btn {
+	transition: .2s;
+	&.btn-gold {
+		font-family: Montserrat,sans-serif;
+		margin: 40px auto;
+		display: flex;
+		background:$ve-gold;
+		padding: 10px 150px;
+		border: none !important;
+		color: $ve-black;
+		transition: .2s;
+		border-radius: 0;
+		&:hover {
+			transition: .2s;
+			transform: scale(1.1);
+			color: white;
+		}
+	}
+}
+
+@media screen and (max-width: 570px){
+	.col-sm-6{
+		padding-left: 0;
+		padding-right: 0;
+		padding-bottom: 0;
+
+	}
+
+	.col-sm-12 {
+		padding-left: 0;
+		padding-right: 0;
+
+	}
+
+	.col-sm-12.first{
+		flex-direction: column;
+		padding: 0;
+
+
+	}
+	.col-sm-12.second{
+		flex-direction: column;
+		padding: 0;
+
+
+	}
+
+	.col-sm-12.tree{
+		flex-direction: column;
+		padding: 20px 0 0 0 ;
+	}
+
+
+	.btn {
+		width: 100%;
+	}
+	app-alert{
+		/deep/{
+			.alert{
+				width: 100% !important;
+			}
+		}
+	}
+}
+

@@ -1,0 +1,24 @@
+<app-header [headerImg]="headerImage" [headerTextBuilding]="'ContactUsForm' | translate"></app-header>
+<app-container>
+	<app-contact-form></app-contact-form>
+</app-container>
+<app-ribbon style="dark"></app-ribbon>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-6">
+			<div class="content">
+				<h4>ELSA SYSTEM DOO</h4>
+				<p>
+					<span>
+					</span>
+					<span>+381 11 346 88 90</span>
+					<span>+381 63 305 500</span>
+					<span>elsasystem@eunet.rs</span>
+				</p>
+			</div>
+		</div>
+		<div class="col-sm-6">
+			<app-map [Iscontact]="true"></app-map>
+		</div>
+	</div>
+</div>

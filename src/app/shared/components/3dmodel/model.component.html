@@ -1,0 +1,39 @@
+<ngbox></ngbox>
+
+<div class="container">
+	<div class="row">
+		<div class="col-sm-6">
+			<carousel>
+				<slide *ngFor="let image of apartment?.images">
+					<div ng-box [src]="'../../../../assets/images/' + image?.name + '-max' + '.png'" [image]="true" [cache]="true"  [style.display.none]="title" [group]="apartment?.images"  style="z-index: 200;cursor: pointer;transition: 0.2s;;">
+						<div class="search">
+							<img class="searchIcon" src="../../../../assets/images/lupa.png">
+						</div>
+						<img [src]="'../../../../assets/images/' + image?.name + '.png'">
+					</div>
+				</slide>
+			</carousel>
+		</div>
+		<div class="col-sm-6 right" *ngIf="activeBuilding == 1">
+			<app-ribbon style="gold">{{'Opremljenost' | translate}}</app-ribbon>
+			<div class="para">
+				<p>{{'VilaElsaIModelDescriptionP1' | translate}} </p>
+				<p>
+					{{'VilaElsaIModelDescriptionP2' | translate}}
+				</p>
+				<button class="btn btn-gold" routerLink="/contact">{{'ReserveOnTime' | translate}}</button>
+			</div>
+		</div>
+		<div class="col-sm-6 right" *ngIf="activeBuilding == 2">
+			<app-ribbon style="gold">{{'Opremljenost' | translate}}</app-ribbon>
+			<div class="para">
+				<p>{{'VilaElsaIIModelDescriptionP1' | translate}} </p>
+				<p>
+					{{'VilaElsaIIModelDescriptionP2' | translate}}
+				</p>
+				<button class="btn btn-gold" routerLink="/contact">{{'ReserveOnTime' | translate}}</button>
+			</div>
+		</div>
+
+	</div>
+</div>

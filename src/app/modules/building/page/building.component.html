@@ -1,0 +1,39 @@
+<app-header *ngIf="activeBuilding?.id == 1" [headerTextSubBuilding]="'text1'| translate" [headerTextBuilding]="activeBuilding.name | translate" [headerImg]="img1"></app-header>
+<app-header *ngIf="activeBuilding?.id == 2" [headerTextSubBuilding]="'text2' | translate" [headerImg]="img2" [headerTextBuilding]="activeBuilding.name | translate"></app-header>
+<app-container>
+	<app-filter (onTypeChange)="onTypeChange($event)"
+				(onFloorChange)="onFloorChange($event)"
+				(onFilterChange)="onFilter()"
+				(onAreaChange)="onAreaChange($event)"
+				[activeBuilding]="activeBuildingId">
+	</app-filter>
+
+	<app-apartmans [apartments]="apartments" [floor]="floors" [types]="types"  [images]="images"  [numberOfBathrooms]="numOfBathroom" [apartment]="apartment" [activeBuilding]="activeBuilding"  ></app-apartmans>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="pagination">
+					<div class="total">
+						{{'AllApartments' | translate}} <span>{{totalItems}}</span>
+					</div>
+					<pagination
+						(pageChanged)="goToPage($event)"
+						[rotate]="true"
+						[maxSize]="3"
+						[boundaryLinks]="true"
+						[previousText]="'&lsaquo;'"
+						[nextText]="'&rsaquo;'"
+						[firstText]="'&laquo;'"
+						[lastText]="'&raquo;'"
+						[itemsPerPage]="pager.pageSize"
+						[totalItems]="totalItems">
+					</pagination>
+				</div>
+				<app-map *ngIf="activeBuilding?.id === 1" [IsBuilding1]="true"  [building]="true"></app-map>
+				<app-map *ngIf="activeBuilding?.id === 2" [IsBuilding2]= "true" [building]="true" ></app-map>
+			</div>
+		</div>
+	</div>
+</app-container>
+
+

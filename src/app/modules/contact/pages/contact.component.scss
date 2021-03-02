@@ -1,0 +1,90 @@
+@import "~bootstrap/scss/bootstrap.scss";
+@import "../../../styles/palette";
+
+app-header{
+	/deep/{
+		.container-fluid {
+			border: 0 !important;
+		}
+		span.sub{
+			display: none !important;
+		}
+		.header-text{
+			bottom: 0 !important;
+			top: auto !important;
+		}
+		img{
+			height: 100% !important;
+			max-width: 100% !important;
+		}
+	}
+}
+
+app-ribbon{
+	/deep/{
+	.ribbon{
+		height: 40px;
+		background: #212121;
+	}
+}
+}
+
+.container-fluid{
+	background: $ve-black;
+	padding: 0;
+	.row{
+		padding: 0;
+		margin: 0;
+	}
+	.col-sm-6{
+		padding: 0;
+		margin: 0;
+		.content{
+			display: flex;
+			height: 100%;
+			width: 70%;
+			float:right;
+			padding: 0 20px;
+			justify-content: center;
+			flex-direction: column;
+			font-family: Montserrat,sans-serif;
+			h4{
+				font-size: 16px;
+				font-weight: 400;
+				color: $ve-gold;
+				text-align: center;
+				padding-bottom: 20px;
+			}
+			p{
+				display: flex;
+				flex-direction: column;
+				text-align: center;
+				span{
+					font-size: 14px;
+					font-weight: 300;
+					color: $ve-gray-light;
+					padding-top: 5px;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 768px) {
+	.content{
+		float: none !important;
+		width: 100% !important;
+	}
+}
+@media screen and (max-width: 570px) {
+	.content{
+		padding: 20px !important;
+	}
+
+	app-header{
+		/deep/{
+			.header-text{
+				padding: 11px !important;
+			}
+		}
+	}
+}

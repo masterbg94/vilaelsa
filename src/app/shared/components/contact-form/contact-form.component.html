@@ -1,0 +1,103 @@
+<div class="container-fluid">
+	<div class="container">
+		<p class="subtitle" [innerHtml]="'ContactSubtitle' | translate"></p>
+		<app-alert style="success" [showing]="submitted" >{{'SuccessMessage' | translate}}</app-alert>
+		<form (ngSubmit)="onSubmit()" #f="ngForm">
+			<div class="row">
+
+						<div class="col-sm-12 first">
+							<div class="col-sm-6">
+								<input type="text"
+									   class="form-control"
+									   placeholder="{{ 'Name' | translate}}"
+									   name="name"
+									   id="name"
+									   ngModel
+									   required
+									   #name="ngModel">
+								<p class="form" *ngIf="!name.valid && name.touched">{{'ErrorName' | translate}}</p>
+							</div>
+						<div class="col-sm-6">
+							<input type="text"
+								   class="form-control"
+								   placeholder="{{'YourEmail' | translate}}"
+								   name="email"
+								   id="email"
+								   ngModel
+								   email
+								   required
+								   #email="ngModel">
+							<p class="form" *ngIf="!email.valid && email.touched"> {{'ErrorEmail' | translate }} </p>
+						</div>
+					</div>
+				<div class="col-sm-12 second">
+					<div class="col-sm-6">
+						<input type="text"
+							   class="form-control"
+							   placeholder="{{'ContactTelephone' | translate}}"
+							   name="phone"
+							   id="phone"
+							   ngModel
+							   #phone="ngModel">
+					</div>
+					<div class="col-sm-6">
+						<input type="hidden"
+							   [value]="subjects"
+							   class="form-control"
+							   placeholder="Odeljenje"
+							   name="subject"
+							   id="subject"
+							   ngModel
+							   #name="ngModel">
+						<li class="select"
+							ngbDropdown
+							#selectType="ngbDropdown"
+							aria-expanded=false>
+
+							<a class="nav-link"
+							   role="button"
+							   ngbDropdownToggle
+							   (click)="selectTypeCollapsed"
+							[class.placeholder]="!subjects">
+								{{subjects || 'Department' | translate}}
+								<i class="fas fa-caret-down"></i>
+							</a>
+
+							<div ngbDropdownMenu
+								 class="dropdown-menu show select"
+								 aria-labelledby="dropdownManual"
+								 (click)="selectTypeCollapsed = false" style="background: white">
+
+								<button class="dropdown-item select" (click)="selectDepartment('Uprava')">
+									{{'Uprava' | translate}}
+								</button>
+
+								<button class="dropdown-item select" (click)="selectDepartment('Marketing')">
+									{{'Marketing' | translate}}
+								</button>
+								<button class="dropdown-item select" (click)="selectDepartment('Prodaja')">
+									{{'Prodaja' | translate}}
+								</button>
+
+							</div>
+						</li>
+					</div>
+				</div>
+					<div class="col-sm-12 tree">
+						<textarea
+							rows="5"
+							type="text"
+							class="form-control"
+							placeholder="{{'Message' | translate}}"
+							name="bodyMessage"
+							id="bodyMessage"
+							ngModel
+							required
+							#bodyMessage="ngModel"></textarea>
+						<p class="form" *ngIf="!bodyMessage.valid && bodyMessage.touched">{{'ErrorMessage' | translate}}</p>
+						<button class="btn btn-gold " [disabled]="!f.valid">{{'SendMessage' | translate}}</button>
+					</div>
+				</div>
+		</form>
+	</div>
+</div>

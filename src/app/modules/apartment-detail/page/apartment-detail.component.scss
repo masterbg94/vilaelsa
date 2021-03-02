@@ -1,0 +1,143 @@
+@import "~bootstrap/scss/bootstrap.scss";
+@import '../../../styles/_palette.scss';
+
+app-header{
+	/deep/{
+		.header-text{
+			display: none !important;
+		}
+	}
+}
+
+.alert{
+	position: absolute;
+	background-color: rgba($ve-black, .7);
+	left: 20%;
+	right: 20%;
+	top: 40%;
+	app-alert {
+		/deep/{
+		.alert{
+			margin-bottom: 0;
+			background-color: white;
+		}
+	}
+	}
+}
+.container{
+	padding: 0;
+	max-width: 1200px;
+	.row{
+		padding: 0;
+		margin: 0;
+	}
+}
+.col-sm-12{
+	display: flex !important;
+	justify-content: center !important;
+	background: #1F1F1F;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 0;
+	padding-right: 0;
+}
+.icons {
+	display: flex;
+	flex-direction: row;
+	align-self: center;
+	justify-content: center;
+
+	.icon {
+		display: flex;
+		margin-left: 20px;
+		img {
+		}
+		.info {
+			display: flex;
+			flex-direction: column;
+			span.icon {
+				font-size: 16px;
+				color: $ve-gold;
+				font-family: Montserrat, sans-serif;
+				font-weight: 300;
+				text-align: left;
+				display: flex;
+				flex-direction: column;
+				&.text {
+					color: white;
+					font-weight: 500;
+					font-size: 22px;
+				}
+			}
+		}
+
+	}
+}
+
+@media screen and (max-width: 768px){
+	.col-sm-12{
+		.icons{
+			padding-right: 0 !important;
+			width: 100%;
+			justify-content: center !important;
+			align-items: center;
+			img{
+				height: 60px;
+				width: 60px;
+			}
+			.info{
+				span.icon.text{
+					font-size: 18px !important;
+				}
+				span.icon{
+					font-size: 16px !important;
+					line-height: 30px;
+				}
+			}
+
+		}
+	}
+}
+@media screen and (max-width: 768px){
+	.alert{
+		top:20% !important;
+		left: 10px !important;
+		right: 10px !important;
+	}
+}
+@media screen and (max-width: 570px){
+	.col-sm-12{
+		.icons{
+			padding-right: 0 !important;
+			justify-content: space-around !important;
+			width: 100%;
+			img{
+				height: 30px !important;
+				width:  30px !important;
+			}
+			.icon{
+				margin-left: 0 !important;
+			}
+			.info{
+				margin-left: 5px;
+				span.icon.text{
+					font-size: 12px !important;
+
+				}
+				span.icon{
+					margin-left: 10px;
+					font-size: 12px !important;
+					line-height: 15px;
+				}
+			}
+
+		}
+	}
+.alert{
+	left: 10px !important;
+	right: 10px !important;
+	top:-5px !important;
+	}
+}
+
+

@@ -1,0 +1,83 @@
+
+<sebm-google-map [scrollwheel] = false style="width: 100%;height: 350px" *ngIf="Iscontact || IsHome"
+	[latitude]="lat"
+	[longitude]="lng"
+	[zoom]="zoom"
+	[disableDefaultUI]="false"
+	[zoomControl]="false">
+
+	<sebm-google-map-marker [iconUrl]="'../../../../assets/images/marker-elsa.png'"
+		*ngFor="let m of markers; let i = index"
+		(markerClick)="clickedMarker(m.label, i)"
+		[latitude]="m.lat"
+		[longitude]="m.lng"
+		[label]="m.label"
+		[markerDraggable]="m.draggable"
+		(dragEnd)="markerDragEnd(m, $event)">
+
+		<sebm-google-map-info-window *ngIf="m.lat == 43.7301677">
+			<strong style="text-align: center" >
+				Vila Elsa I<br>
+				Miladina Pećinara<br>
+				Zlatibor
+			</strong>
+		</sebm-google-map-info-window>
+		<sebm-google-map-info-window *ngIf="m.lat ==  43.732116">
+			<strong style="text-align: center" >
+				Vila Elsa II<br>
+				Krfska BB<br>
+				Zlatibor
+			</strong>
+		</sebm-google-map-info-window>
+		<sebm-google-map-info-window *ngIf="m.lat == 44.8952055">
+			<strong style="text-align: center" >
+				Elsa System Doo<br>
+				Prote Jeftimija Ivanovica 69 <br>
+				Beograd
+			</strong>
+		</sebm-google-map-info-window>
+
+	</sebm-google-map-marker>
+
+	<sebm-google-map-circle [latitude]="lat + 0.3" [longitude]="lng"
+							[radius]="5000"
+							[fillColor]="'blue'"
+							[circleDraggable]="true"
+							[editable]="true">
+	</sebm-google-map-circle>
+
+</sebm-google-map>
+
+<sebm-google-map [scrollwheel] = false style="width: 100%;height: 350px" *ngIf="IsBuilding1 || IsBuilding2"
+				 [latitude]="lat"
+				 [longitude]="lng"
+				 [zoom]="zoom"
+				 [disableDefaultUI]="false"
+				 [zoomControl]="false">
+
+	<sebm-google-map-marker [iconUrl]="'../../../../assets/images/marker-elsa.png'"
+							(markerClick)="clickedMarker(markers[2], i)"
+							[latitude]="lat"
+							[longitude]="lng"
+							[markerDraggable]="draggable"
+							[label]="markers[2]"
+							(dragEnd)="markerDragEnd(m, $event)">
+
+		<sebm-google-map-info-window>
+			<strong style="text-align: center" >
+				{{text}}<br>
+				{{address}}<br>
+				{{city}}
+			</strong>
+		</sebm-google-map-info-window>
+
+	</sebm-google-map-marker>
+
+	<sebm-google-map-circle [latitude]="lat + 0.3" [longitude]="lng"
+							[radius]="5000"
+							[fillColor]="'blue'"
+							[circleDraggable]="true"
+							[editable]="true">
+	</sebm-google-map-circle>
+
+</sebm-google-map>

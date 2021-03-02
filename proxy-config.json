@@ -1,0 +1,7 @@
+{
+  "/api": {
+    "target": "http://vilaelsa.com/backend/public/api",
+    "logLevel": "debug",
+    "secure": false
+  }
+}

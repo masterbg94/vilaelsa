@@ -1,0 +1,62 @@
+<app-header [headerImg]="headerImage1" *ngIf="apartment?.buildingId == 1"></app-header>
+<app-header [headerImg]="headerImage2" *ngIf="apartment?.buildingId == 2"></app-header>
+<app-header-sub *ngIf="apartment?.buildingId == 1">
+	<div class="alert" *ngIf="apartment?.status == 'Slobodno'">
+		<app-alert style="success" [showing]="apartment"> {{'AvailableApartment' | translate}}...</app-alert>
+	</div>
+	<div class="alert" *ngIf="apartment?.status == 'Prodato'">
+		<app-alert style="busy" [showing]="apartment">{{'SoldApartment' | translate}}...</app-alert>
+	</div>
+	<div class="alert" *ngIf="apartment?.status == 'Rezervisano'">
+		<app-alert style="warrning" [showing]="apartment">{{'ReserveApartment' | translate}}......</app-alert>
+	</div>
+
+</app-header-sub>
+
+<app-header-sub [headerSubImage]="headerSubImage" *ngIf="apartment?.buildingId == 2">
+	<div class="alert" *ngIf="apartment?.status == 'Slobodno'">
+		<app-alert style="success" [showing]="apartment"> {{'AvailableApartment' | translate}}...</app-alert>
+	</div>
+	<div class="alert" *ngIf="apartment?.status == 'Prodato'">
+		<app-alert style="busy" [showing]="apartment">{{'SoldApartment' | translate}}...</app-alert>
+	</div>
+	<div class="alert" *ngIf="apartment?.status == 'Rezervisano'">
+		<app-alert style="warrning" [showing]="apartment">{{'ReserveApartment' | translate}}......</app-alert>
+	</div>
+
+</app-header-sub>
+<app-container>
+	<app-ribbon style="gold">{{'ApartmentDetail' | translate}}</app-ribbon>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="icons">
+					<div class="icon 1">
+						<img src="../../../../assets/images/square.png">
+						<div class="info">
+							<span class="icon">{{'Area' | translate}}</span>
+							<span class="icon text">{{apartment?.area}}m²</span>
+						</div>
+
+					</div>
+					<div class="icon 2">
+						<img src="../../../../assets/images/rooms.png">
+						<div class="info">
+							<span class="icon">{{'Rooms' | translate}}</span>
+							<span class="icon text">{{apartment?.roomsNumber}}</span>
+						</div>
+					</div>
+					<div class="icon 3">
+						<img src="../../../../assets/images/bathroom.png">
+						<div class="info">
+							<span class="icon">{{'Bathroom' | translate}}</span>
+							<span class="icon text">1</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<app-table [apartment]="apartment" [images]="images" [rooms]="rooms" ></app-table>
+	<app-model *ngIf="activeBuildingId" [apartment]="apartment" [images]="images" [activeBuilding]="activeBuildingId"></app-model>
+</app-container>

@@ -1,0 +1,113 @@
+
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12">
+			<ul class="lang">
+				<li class="select"
+					ngbDropdown
+					#selectType="ngbDropdown"
+					aria-expanded=false
+					(click)="getTypes()">
+
+					<a class="nav-link"
+					   role="button"
+					   ngbDropdownToggle
+					   (click)="selectTypeCollapsed">
+						{{selectedType?.name || whatType | translate }}
+						<i class="fas fa-caret-down"></i>
+					</a>
+
+					<div ngbDropdownMenu
+						 class="dropdown-menu show select"
+						 aria-labelledby="dropdownManual"
+						 (click)="selectTypeCollapsed = false" style="background: white">
+
+						<button class="dropdown-item select"
+								(click)="selectAType({id: null, name: 'AllTypes'})">
+							{{'AllTypes' | translate}}
+						</button>
+
+						<button *ngFor="let type of availableTypes"
+								class="dropdown-item select"
+								(click)="selectAType(type)">
+							{{type?.name | translate}}
+						</button>
+					</div>
+
+
+				</li>
+				<li class="select"
+					ngbDropdown
+					#selectType="ngbDropdown"
+					aria-expanded=false
+					(click)="getFloors()">
+
+					<a class="nav-link"
+					   role="button"
+					   ngbDropdownToggle
+					   (click)="selectTypeCollapsed">
+						{{ selectedFloor?.name || whatFloors | translate}}
+						<i class="fas fa-caret-down"></i>
+					</a>
+
+					<div ngbDropdownMenu
+						 class="dropdown-menu show select"
+						 aria-labelledby="dropdownManual"
+						 (click)="selectTypeCollapsed = false" style="background: white">
+
+						<button class="dropdown-item select"
+								(click)="selectFloors({id: null, name: 'AllFloors'})">
+							{{'AllFloors' | translate}}
+						</button>
+
+						<button *ngFor="let floor of availableFloors"
+								class="dropdown-item select"
+								(click)="selectFloors(floor)">
+							{{floor?.name | translate}}
+						</button>
+					</div>
+
+
+				</li>
+				<li class="select"
+					ngbDropdown
+					#selectType="ngbDropdown"
+					aria-expanded=false>
+
+					<a class="nav-link"
+					   role="button"
+					   ngbDropdownToggle
+					   (click)="selectTypeCollapsed" style="text-transform: uppercase">
+						{{selectedArea.selected || 'Area' | translate}}
+						<i class="fas fa-caret-down"></i>
+					</a>
+
+					<div ngbDropdownMenu
+						 class="dropdown-menu show select"
+						 aria-labelledby="dropdownManual"
+						 (click)="selectTypeCollapsed = false" style="background: white">
+
+						<button class="dropdown-item select" (click)="selectArea(20, 30, '20 - 30m2')" >
+							20 - 30m2
+						</button>
+
+						<button class="dropdown-item select" (click)="selectArea(31, 40, '31 - 40m2')">
+							31 - 40m2
+						</button>
+						<button class="dropdown-item select" (click)="selectArea(41, 50, '41 - 50m2')">
+							41 - 50m2
+						</button>
+						<button class="dropdown-item select" (click)="selectArea(51, 60, '51 - 60m2')">
+							51 - 60m2
+						</button>
+					</div>
+				</li>
+
+				<li>
+					<a class="btn btn-gold" (click)="filterAll()">{{'Filter' | translate}}</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+

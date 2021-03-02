@@ -1,0 +1,42 @@
+<div class="container-fluid" style="position: relative">
+	<app-slider [apartments]="apartments" [types]="types" [floors]="floors" [images]="images" [floor]="floors?.name" [numberOfBathrooms]="numOfBathroom"></app-slider>
+	<app-ribbon style="gold">{{'SliderRibbon' | translate}}</app-ribbon>
+	<app-container>
+		<div class="row">
+			<div class="one">
+				<div class="col-sm-6">
+					<img src="../../../../assets/images/elsa-pocetna.jpg">
+				</div>
+				<div class="col-sm-6 e1">
+					<p [innerHtml]=" 'VillElsaIdescription' | translate">
+
+					</p>
+					<button class="btn btn-gold" routerLink="building/1">{{'VillaElsaI' | translate}}</button>
+				</div>
+			</div>
+			<div class="two">
+				<div class="col-sm-6 e2">
+					<p [innerHtml]=" 'VillaElsaIIdescription' | translate">
+					</p>
+					<button class="btn btn-gold" routerLink="building/2">{{'VillaElsaII' | translate}}</button>
+				</div>
+
+				<div class="col-sm-6">
+					<img src="../../../../assets/images/elsa2.png">
+				</div>
+			</div>
+
+
+		</div>
+
+	</app-container>
+	<app-ribbon style="gold">{{'Zlatibor' | translate}}</app-ribbon>
+	<app-location></app-location>
+	<app-map [IsHome]="true"></app-map>
+	<app-container>
+		<app-ribbon style="gold">{{'Luxury' | translate}}</app-ribbon>
+	</app-container>
+	<app-design></app-design>
+</div>
+
+

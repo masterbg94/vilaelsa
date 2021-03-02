@@ -1,0 +1,13 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<section class="site">
+	<header class="header" id="header" *ngIf="!isLogin && !isAdmin">
+		<div class="container">
+			<app-nav-menu #nav (onLanguageChange)="updateActiveLang($event, 'nav')"></app-nav-menu>
+		</div>
+	</header>
+
+	<router-outlet></router-outlet>
+	<app-footer #footer *ngIf="!isLogin && !isAdmin" (onLanguageChange)="updateActiveLang($event, 'footer')"></app-footer>
+</section>
+
+

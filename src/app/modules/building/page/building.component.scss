@@ -1,0 +1,119 @@
+@import "~bootstrap/scss/bootstrap.scss";
+@import '../../../styles/palette';
+
+
+.pagination{
+	background: $ve-black;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border-radius: 0 !important;
+	font-family: Montserrat,sans-serif;
+	color: white;
+	font-weight: 400;
+	font-size: 16px;
+	.total{
+		justify-content: center;
+		padding: 20px 0 10px 0;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		font-size: 14px;
+		span{
+			font-size: 20px;
+			color: $ve-gold;
+		}
+	}
+	pagination{
+		/deep/
+		{
+			.page-item.active .page-link{
+				background: $ve-gold !important;
+				color: $ve-black;
+
+			}
+
+			ul.pagination {
+				display: flex;
+				justify-content: center;
+				margin-bottom: 0;
+				padding: 0 0 20px 0;
+
+				li{
+					a.page-link{
+						background: $ve-black;
+						border: 0;
+						color: $ve-gold;
+						box-shadow: none !important;
+					}
+				}
+			}
+		}
+	}
+}
+
+app-header{
+	/deep/{
+		.header-text{
+			span.sub {
+				font-size: 13px !important;
+				text-align: center;
+			}
+
+		}
+	}
+
+}
+
+.uskoro{
+	.col-sm-12{
+		padding: 40px 0;
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		font-family: Montserrat, sans-serif;
+		font-size: 26px;
+		font-weight: 400;
+		color: #D9D9D9;
+		background: $ve-black;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	app-header{
+		/deep/
+		{
+			.header-text{
+				top: 30% !important;
+				left: 10% !important;
+				right: 10% !important;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 570px) {
+	app-header{
+		/deep/
+		{
+			.container-fluid{
+				height: 200px !important;
+				border: none !important;
+				img{
+					height: 200px !important;
+				}
+			}
+			.header-text{
+				top: 0 !important;
+				left: 0 !important;
+				right: 0 !important;
+				padding: 10px !important;
+				height: 100% !important;
+
+				span.sub{
+					padding: 0 10px !important;
+				}
+			}
+		}
+	}
+}

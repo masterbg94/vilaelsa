@@ -1,0 +1,29 @@
+@import "../../../styles/palette";
+
+.ribbon {
+
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	padding: 10px;
+	text-align: center;
+	font-family: Montserrat,sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+
+	&-gold {
+
+		background: $ve-gold;
+		color: $ve-black;
+	}
+
+	&-dark {
+
+		background: $ve-black;
+		color: #fff;
+	}
+	&-warrning {
+		background: #e77832;
+		color: #ffffff;
+	}
+}

@@ -1,0 +1,48 @@
+@import "../../../styles/palette";
+
+.alert {
+
+	display: flex;
+	align-content: center;
+	padding: 10px;
+	font-family: Montserrat,sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	border-radius: 0;
+	justify-content: flex-start;
+	padding-left: 70px;
+	background-color: white;
+
+		&-success {
+
+			background: transparent;
+			border: 2px solid $ve-green;
+			color: $ve-black;
+			background: url("../../../../assets/images/alertSucc.png");
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: left;
+		}
+
+		&-warrning {
+			background: transparent;
+			border: 2px solid $ve-gold;
+			color: $ve-black;
+			background: url("../../../../assets/images/alertWarr.png");
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: left;
+		}
+	&-busy {
+		background: transparent;
+		border: 2px solid $ve-red;
+		color: $ve-black;
+		background: url("../../../../assets/images/alertBusy.png");
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: left;
+	}
+
+}
+
+

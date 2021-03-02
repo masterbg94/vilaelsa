@@ -1,0 +1,2680 @@
+{
+  "buildings": [
+    {
+      "id": 1,
+      "name": "Vila Elsa I",
+      "sold": false,
+      "headerImage": "asdffaf",
+      "type": [
+        {
+          "id": 1,
+          "apartments": [
+            {
+              "id": 1,
+              "roomsNumber": 2,
+              "status": "Slobodno",
+              "floor": [
+                {
+                  "id": 1,
+                  "name": "Suteren"
+                }
+              ],
+              "area": 44.50,
+              "images": [
+                {
+                  "name": "apartments/tip1/1"
+                },
+                {
+                  "name": "apartments/tip1/2"
+                },
+                {
+                  "name": "apartments/tip1/3"
+                },
+                {
+                  "name": "apartments/tip1/4"
+                },
+                {
+                  "name": "apartments/tip1/5"
+                },
+                {
+                  "name": "apartments/tip1/6"
+                },
+                {
+                  "name": "apartments/tip1/7"
+                },
+                {
+                  "name": "apartments/tip1/8"
+                },
+                {
+                  "name": "apartments/tip1/9"
+                },
+                {
+                  "name": "apartments/tip1/1"
+                }
+              ],
+              "imgModel": "apartments/tip1/top",
+              "imgHailight": "apartments/tip1/top",
+              "rooms": [
+                {
+                  "id": 1,
+                  "name": "Predsoblje",
+                  "area": 1.05
+                },
+                {
+                  "id": 2,
+                  "name": "Kuhinja",
+                  "area": 3
+                },
+                {
+                  "id": 3,
+                  "name": "Dnevna Soba sa trpezarijom",
+                  "area": 15.04
+                },
+                {
+                  "id": 4,
+                  "name": "Degazman",
+                  "area": 1.73
+                },
+                {
+                  "id": 5,
+                  "name": "Soba",
+                  "area": 7.53
+                },
+                {
+                  "id": 6,
+                  "name": "Kupatilo",
+                  "area": 3.63
+                },
+                {
+                  "id": 7,
+                  "name": "Soba",
+                  "area": 8.51
+                },
+                {
+                  "id": 8,
+                  "name": "Terasa",
+                  "area": 4.04
+                }
+              ]
+            },
+            {
+              "id": 6,
+              "roomsNumber": 2,
+              "status": "Slobodno",
+              "floor": [
+                {
+                  "id": 1,
+                  "name": "Suteren"
+                }
+              ],
+              "area": 44.50,
+              "images": [
+                {
+                  "name": "apartments/tip1/1"
+                },
+                {
+                  "name": "apartments/tip1/2"
+                },
+                {
+                  "name": "apartments/tip1/3"
+                },
+                {
+                  "name": "apartments/tip1/4"
+                },
+                {
+                  "name": "apartments/tip1/5"
+                },
+                {
+                  "name": "apartments/tip1/6"
+                },
+                {
+                  "name": "apartments/tip1/7"
+                },
+                {
+                  "name": "apartments/tip1/8"
+                },
+                {
+                  "name": "apartments/tip1/9"
+                },
+                {
+                  "name": "apartments/tip1/1"
+                }
+              ],
+              "imgModel": "apartments/tip1/top",
+              "imgHailight": "apartments/tip1/top",
+              "rooms": [
+                {
+                  "id": 1,
+                  "name": "Predsoblje",
+                  "area": 1.05
+                },
+                {
+                  "id": 2,
+                  "name": "Kuhinja",
+                  "area": 3
+                },
+                {
+                  "id": 3,
+                  "name": "Dnevna Soba sa trpezarijom",
+                  "area": 15.04
+                },
+                {
+                  "id": 4,
+                  "name": "Degazman",
+                  "area": 1.73
+                },
+                {
+                  "id": 5,
+                  "name": "Soba",
+                  "area": 7.53
+                },
+                {
+                  "id": 6,
+                  "name": "Kupatilo",
+                  "area": 3.63
+                },
+                {
+                  "id": 7,
+                  "name": "Soba",
+                  "area": 8.51
+                },
+                {
+                  "id": 8,
+                  "name": "Terasa",
+                  "area": 4.04
+                }
+              ]
+            },
+            {
+              "id": 9,
+              "roomsNumber": 2,
+              "status": "Slobodno",
+              "floor": [
+                {
+                  "id": 1,
+                  "name": "Prizemlje"
+                }
+              ],
+              "area": 44.50,
+              "images": [
+                {
+                  "name": "apartments/tip1/1"
+                },
+                {
+                  "name": "apartments/tip1/2"
+                },
+                {
+                  "name": "apartments/tip1/3"
+                },
+                {
+                  "name": "apartments/tip1/4"
+                },
+                {
+                  "name": "apartments/tip1/5"
+                },
+                {
+                  "name": "apartments/tip1/6"
+                },
+                {
+                  "name": "apartments/tip1/7"
+                },
+                {
+                  "name": "apartments/tip1/8"
+                },
+                {
+                  "name": "apartments/tip1/9"
+                },
+                {
+                  "name": "apartments/tip1/1"
+                }
+              ],
+              "imgModel": "apartments/tip1/top",
+              "imgHailight": "apartments/tip1/top",
+              "rooms": [
+                {
+                  "id": 1,
+                  "name": "Predsoblje",
+                  "area": 1.05
+                },
+                {
+                  "id": 2,
+                  "name": "Kuhinja",
+                  "area": 3
+                },
+                {
+                  "id": 3,
+                  "name": "Dnevna Soba sa trpezarijom",
+                  "area": 15.04
+                },
+                {
+                  "id": 4,
+                  "name": "Degazman",
+                  "area": 1.73
+                },
+                {
+                  "id": 5,
+                  "name": "Soba",
+                  "area": 7.53
+                },
+                {
+                  "id": 6,
+                  "name": "Kupatilo",
+                  "area": 3.63
+                },
+                {
+                  "id": 7,
+                  "name": "Soba",
+                  "area": 8.51
+                },
+                {
+                  "id": 8,
+                  "name": "Terasa",
+                  "area": 4.04
+                }
+              ]
+            },
+            {
+              "id": 10,
+              "roomsNumber": 2,
+              "status": "Slobodno",
+              "floor": [
+                {
+                  "id": 1,
+                  "name": "Prizemlje"
+                }
+              ],
+              "area": 44.50,
+              "images": [
+                {
+                  "name": "apartments/tip1/1"
+                },
+                {
+                  "name": "apartments/tip1/2"
+                },
+                {
+                  "name": "apartments/tip1/3"
+                },
+                {
+                  "name": "apartments/tip1/4"
+                },
+                {
+                  "name": "apartments/tip1/5"
+                },
+                {
+                  "name": "apartments/tip1/6"
+                },
+                {
+                  "name": "apartments/tip1/7"
+                },
+                {
+                  "name": "apartments/tip1/8"
+                },
+                {
+                  "name": "apartments/tip1/9"
+                },
+                {
+                  "name": "apartments/tip1/1"
+                }
+              ],
+              "imgModel": "apartments/tip1/top",
+              "imgHailight": "apartments/tip1/top",
+              "rooms": [
+                {
+                  "id": 1,
+                  "name": "Predsoblje",
+                  "area": 1.05
+                },
+                {
+                  "id": 2,
+                  "name": "Kuhinja",
+                  "area": 3
+                },
+                {
+                  "id": 3,
+                  "name": "Dnevna Soba sa trpezarijom",
+                  "area": 15.04
+                },
+                {
+                  "id": 4,
+                  "name": "Degazman",
+                  "area": 1.73
+                },
+                {
+                  "id": 5,
+                  "name": "Soba",
+                  "area": 7.53
+                },
+                {
+                  "id": 6,
+                  "name": "Kupatilo",
+                  "area": 3.63
+                },
+                {
+                  "id": 7,
+                  "name": "Soba",
+                  "area": 8.51
+                },
+                {
+                  "id": 8,
+                  "name": "Terasa",
+                  "area": 4.04
+                }
+              ]
+            },
+            {
+              "id": 20,
+              "roomsNumber": 2,
+              "status": "Slobodno",
+              "floor": [
+                {
+                  "id": 1,
+                  "name": "Prvi Sprat"
+                }
+              ],
+              "area": 44.50,
+              "images": [
+                {
+                  "name": "apartments/tip1/1"
+                },
+                {
+                  "name": "apartments/tip1/2"
+                },
+                {
+                  "name": "apartments/tip1/3"
+                },
+                {
+                  "name": "apartments/tip1/4"
+                },
+                {
+                  "name": "apartments/tip1/5"
+                },
+                {
+                  "name": "apartments/tip1/6"
+                },
+                {
+                  "name": "apartments/tip1/7"
+                },
+                {
+                  "name": "apartments/tip1/8"
+                },
+                {
+                  "name": "apartments/tip1/9"
+                },
+                {
+                  "name": "apartments/tip1/1"
+                }
+              ],
+              "imgModel": "apartments/tip1/top",
+              "imgHailight": "apartments/tip1/top",
+              "rooms": [
+                {
+                  "id": 1,
+                  "name": "Predsoblje",
+                  "area": 1.05
+                },
+                {
+                  "id": 2,
+                  "name": "Kuhinja",
+                  "area": 3
+                },
+                {
+                  "id": 3,
+                  "name": "Dnevna Soba sa trpezarijom",
+                  "area": 15.04
+                },
+                {
+                  "id": 4,
+                  "name": "Degazman",
+                  "area": 1.73
+                },
+                {
+                  "id": 5,
+                  "name": "Soba",
+                  "area": 7.53
+                },
+                {
+                  "id": 6,
+                  "name": "Kupatilo",
+                  "area": 3.63
+                },
+                {
+                  "id": 7,
+                  "name": "Soba",
+                  "area": 8.51
+                },
+                {
+                  "id": 8,
+                  "name": "Terasa",
+                  "area": 4.04
+                }
+              ]
+            },
+            {
+              "id": 26,
+              "roomsNumber": 2,
+              "status": "Slobodno",
+              "floor": [
+                {
+                  "id": 1,
+                  "name": "Prvi Sprat"
+                }
+              ],
+              "area": 44.50,
+              "images": [
+                {
+                  "name": "apartments/tip1/1"
+                },
+                {
+                  "name": "apartments/tip1/2"
+                },
+                {
+                  "name": "apartments/tip1/3"
+                },
+                {
+                  "name": "apartments/tip1/4"
+                },
+                {
+                  "name": "apartments/tip1/5"
+                },
+                {
+                  "name": "apartments/tip1/6"
+                },
+                {
+                  "name": "apartments/tip1/7"
+                },
+                {
+                  "name": "apartments/tip1/8"
+                },
+                {
+                  "name": "apartments/tip1/9"
+                },
+                {
+                  "name": "apartments/tip1/1"
+                }
+              ],
+              "imgModel": "apartments/tip1/top",
+              "imgHailight": "apartments/tip1/top",
+              "rooms": [
+                {
+                  "id": 1,
+                  "name": "Predsoblje",
+                  "area": 1.05
+                },
+                {
+                  "id": 2,
+                  "name": "Kuhinja",
+                  "area": 3
+                },
+                {
+                  "id": 3,
+                  "name": "Dnevna Soba sa trpezarijom",
+                  "area": 15.04
+                },
+                {
+                  "id": 4,
+                  "name": "Degazman",
+                  "area": 1.73
+                },
+                {
+                  "id": 5,
+                  "name": "Soba",
+                  "area": 7.53
+                },
+                {
+                  "id": 6,
+                  "name": "Kupatilo",
+                  "area": 3.63
+                },
+                {
+                  "id": 7,
+                  "name": "Soba",
+                  "area": 8.51
+                },
+                {
+                  "id": 8,
+                  "name": "Terasa",
+                  "area": 4.04
+                }
+              ]
+            },
+            {
+              "id": 27,
+              "roomsNumber": 2,
+              "status": "Slobodno",
+              "floor": [
+                {
+                  "id": 1,
+                  "name": "Prvi Sprat"
+                }
+              ],
+              "area": 44.50,
+              "images": [
+                {
+                  "name": "apartments/tip1/1"
+                },
+                {
+                  "name": "apartments/tip1/2"
+                },
+                {
+                  "name": "apartments/tip1/3"
+                },
+                {
+                  "name": "apartments/tip1/4"
+                },
+                {
+                  "name": "apartments/tip1/5"
+                },
+                {
+                  "name": "apartments/tip1/6"
+                },
+                {
+                  "name": "apartments/tip1/7"
+                },
+                {
+                  "name": "apartments/tip1/8"
+                },
+                {
+                  "name": "apartments/tip1/9"
+                },
+                {
+                  "name": "apartments/tip1/1"
+                }
+              ],
+              "imgModel": "apartments/tip1/top",
+              "imgHailight": "apartments/tip1/top",
+              "rooms": [
+                {
+                  "id": 1,
+                  "name": "Predsoblje",
+                  "area": 1.05
+                },
+                {
+                  "id": 2,
+                  "name": "Kuhinja",
+                  "area": 3
+                },
+                {
+                  "id": 3,
+                  "name": "Dnevna Soba sa trpezarijom",
+                  "area": 15.04
+                },
+                {
+                  "id": 4,
+                  "name": "Degazman",
+                  "area": 1.73
+                },
+                {
+                  "id": 5,
+                  "name": "Soba",
+                  "area": 7.53
+                },
+                {
+                  "id": 6,
+                  "name": "Kupatilo",
+                  "area": 3.63
+                },
+                {
+                  "id": 7,
+                  "name": "Soba",
+                  "area": 8.51
+                },
+                {
+                  "id": 8,
+                  "name": "Terasa",
+                  "area": 4.04
+                }
+              ]
+            },
+            {
+              "id": 31,
+              "roomsNumber": 2,
+              "status": "Slobodno",
+              "floor": [
+                {
+                  "id": 1,
+                  "name": "Drugi Sprat"
+                }
+              ],
+              "area": 44.50,
+              "images": [
+                {
+                  "name": "apartments/tip1/1"
+                },
+                {
+                  "name": "apartments/tip1/2"
+                },
+                {
+                  "name": "apartments/tip1/3"
+                },
+                {
+                  "name": "apartments/tip1/4"
+                },
+                {
+                  "name": "apartments/tip1/5"
+                },
+                {
+                  "name": "apartments/tip1/6"
+                },
+                {
+                  "name": "apartments/tip1/7"
+                },
+                {
+                  "name": "apartments/tip1/8"
+                },
+                {
+                  "name": "apartments/tip1/9"
+                },
+                {
+                  "name": "apartments/tip1/1"
+                }
+              ],
+              "imgModel": "apartments/tip1/top",
+              "imgHailight": "apartments/tip1/top",
+              "rooms": [
+                {
+                  "id": 1,
+                  "name": "Predsoblje",
+                  "area": 1.05
+                },
+                {
+                  "id": 2,
+                  "name": "Kuhinja",
+                  "area": 3
+                },
+                {
+                  "id": 3,
+                  "name": "Dnevna Soba sa trpezarijom",
+                  "area": 15.04
+                },
+                {
+                  "id": 4,
+                  "name": "Degazman",
+                  "area": 1.73
+                },
+                {
+                  "id": 5,
+                  "name": "Soba",
+                  "area": 7.53
+                },
+                {
+                  "id": 6,
+                  "name": "Kupatilo",
+                  "area": 3.63
+                },
+                {
+                  "id": 7,
+                  "name": "Soba",
+                  "area": 8.51
+                },
+                {
+                  "id": 8,
+                  "name": "Terasa",
+                  "area": 4.04
+                }
+              ]
+            },
+            {
+              "id": 42,
+              "roomsNumber": 2,
+              "status": "Slobodno",
+              "floor": [
+                {
+                  "id": 1,
+                  "name": "Treci Sprat"
+                }
+              ],
+              "area": 44.50,
+              "images": [
+                {
+                  "name": "apartments/tip1/1"
+                },
+                {
+                  "name": "apartments/tip1/2"
+                },
+                {
+                  "name": "apartments/tip1/3"
+                },
+                {
+                  "name": "apartments/tip1/4"
+                },
+                {
+                  "name": "apartments/tip1/5"
+                },
+                {
+                  "name": "apartments/tip1/6"
+                },
+                {
+                  "name": "apartments/tip1/7"
+                },
+                {
+                  "name": "apartments/tip1/8"
+                },
+                {
+                  "name": "apartments/tip1/9"
+                },
+                {
+                  "name": "apartments/tip1/1"
+                }
+              ],
+              "imgModel": "apartments/tip1/top",
+              "imgHailight": "apartments/tip1/top",
+              "rooms": [
+                {
+                  "id": 1,
+                  "name": "Predsoblje",
+                  "area": 1.05
+                },
+                {
+                  "id": 2,
+                  "name": "Kuhinja",
+                  "area": 3
+                },
+                {
+                  "id": 3,
+                  "name": "Dnevna Soba sa trpezarijom",
+                  "area": 15.04
+                },
+                {
+                  "id": 4,
+                  "name": "Degazman",
+                  "area": 1.73
+                },
+                {
+                  "id": 5,
+                  "name": "Soba",
+                  "area": 7.53
+                },
+                {
+                  "id": 6,
+                  "name": "Kupatilo",
+                  "area": 3.63
+                },
+                {
+                  "id": 7,
+                  "name": "Soba",
+                  "area": 8.51
+                },
+                {
+                  "id": 8,
+                  "name": "Terasa",
+                  "area": 4.04
+                }
+              ]
+            },
+            {
+              "id": 43,
+              "roomsNumber": 2,
+              "status": "Slobodno",
+              "floor": [
+                {
+                  "id": 1,
+                  "name": "Cetvrti Sprat"
+                }
+              ],
+              "area": 44.50,
+              "images": [
+                {
+                  "name": "apartments/tip1/1"
+                },
+                {
+                  "name": "apartments/tip1/2"
+                },
+                {
+                  "name": "apartments/tip1/3"
+                },
+                {
+                  "name": "apartments/tip1/4"
+                },
+                {
+                  "name": "apartments/tip1/5"
+                },
+                {
+                  "name": "apartments/tip1/6"
+                },
+                {
+                  "name": "apartments/tip1/7"
+                },
+                {
+                  "name": "apartments/tip1/8"
+                },
+                {
+                  "name": "apartments/tip1/9"
+                },
+                {
+                  "name": "apartments/tip1/1"
+                }
+              ],
+              "imgModel": "apartments/tip1/top",
+              "imgHailight": "apartments/tip1/top",
+              "rooms": [
+                {
+                  "id": 1,
+                  "name": "Predsoblje",
+                  "area": 1.05
+                },
+                {
+                  "id": 2,
+                  "name": "Kuhinja",
+                  "area": 3
+                },
+                {
+                  "id": 3,
+                  "name": "Dnevna Soba sa trpezarijom",
+                  "area": 15.04
+                },
+                {
+                  "id": 4,
+                  "name": "Degazman",
+                  "area": 1.73
+                },
+                {
+                  "id": 5,
+                  "name": "Soba",
+                  "area": 7.53
+                },
+                {
+                  "id": 6,
+                  "name": "Kupatilo",
+                  "area": 3.63
+                },
+                {
+                  "id": 7,
+                  "name": "Soba",
+                  "area": 8.51
+                },
+                {
+                  "id": 8,
+                  "name": "Terasa",
+                  "area": 4.04
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "apartments": [
+            {
+              "id": 2,
+              "roomsNumber": 1,
+              "status": "Slobodno",
+              "floor": [
+                {
+                  "id": 1,
+                  "name": "Suteren"
+                }
+              ],
+              "area": 35.10,
+              "images": [
+                {
+                  "name": "apartments/tip2/1"
+                },
+                {
+                  "name": "apartments/tip2/2"
+                },
+                {
+                  "name": "apartments/tip2/3"
+                },
+                {
+                  "name": "apartments/tip2/4"
+                },
+                {
+                  "name": "apartments/tip2/5"
+                },
+                {
+                  "name": "apartments/tip2/6"
+                },
+                {
+                  "name": "apartments/tip2/7"
+                },
+                {
+                  "name": "apartments/tip2/8"
+                },
+                {
+                  "name": "apartments/tip2/9"
+                },
+                {
+                  "name": "apartments/tip2/10"
+                }
+              ],
+              "imgModel": "apartments/tip2/top",
+              "imgHailight": "apartments/tip2/top",
+              "rooms": [
+                {
+                  "id": 1,
+                  "name": "Predsoblje",
+                  "area": 1.30
+                },
+                {
+                  "id": 2,
+                  "name": "Kupatilo",
+                  "area": 3.46
+                },
+                {
+                  "id": 3,
+                  "name": "Dnevna soba sa trpezarijom",
+                  "area": 17.43
+                },
+                {
+                  "id": 4,
+                  "nae": "Soba",
+                  "area": 8.46
+                },
+                {
+                  "id": 5,
+                  "name": "Terasa",
+                  "area": 3.95
+                }
+              ]
+            },
+            {
+              "id": 2,
+              "roomsNumber": 1,
+              "status": "Slobodno",
+              "floor": [
+                {
+                  "id": 1,
+                  "name": "Prizemlje"
+                }
+              ],
+              "area": 35.10,
+              "images": [
+                {
+                  "name": "apartments/tip2/1"
+                },
+                {
+                  "name": "apartments/tip2/2"
+                },
+                {
+                  "name": "apartments/tip2/3"
+                },
+                {
+                  "name": "apartments/tip2/4"
+                },
+                {
+                  "name": "apartments/tip2/5"
+                },
+                {
+                  "name": "apartments/tip2/6"
+                },
+                {
+                  "name": "apartments/tip2/7"
+                },
+                {
+                  "name": "apartments/tip2/8"
+                },
+                {
+                  "name": "apartments/tip2/9"
+                },
+                {
+                  "name": "apartments/tip2/10"
+                }
+              ],
+              "imgModel": "apartments/tip2/top",
+              "imgHailight": "apartments/tip2/top",
+              "rooms": [
+                {
+                  "id": 1,
+                  "name": "Predsoblje",
+                  "area": 1.30
+                },
+                {
+                  "id": 2,
+                  "name": "Kupatilo",
+                  "area": 3.46
+                },
+                {
+                  "id": 3,
+                  "name": "Dnevna soba sa trpezarijom",
+                  "area": 17.43
+                },
+                {
+                  "id": 4,
+                  "name": "Sba",
+                  "area": 8.46
+                },
+                {
+                  "id": 5,
+                  "name": "Terasa",
+                  "area": 3.95
+                }
+              ]
+            },
+            {
+              "id": 2,
+              "roomsNumber": 1,
+              "status": "Slobodno",
+              "floor": [
+                {
+                  "id": 1,
+                  "name": "Prvi Sprat"
+                }
+              ],
+              "area": 35.10,
+              "images": [
+                {
+                  "name": "apartments/tip2/1"
+                },
+                {
+                  "name": "apartments/tip2/2"
+                },
+                {
+                  "name": "apartments/tip2/3"
+                },
+                {
+                  "name": "apartments/tip2/4"
+                },
+                {
+                  "name": "apartments/tip2/5"
+                },
+                {
+                  "name": "apartments/tip2/6"
+                },
+                {
+                  "name": "apartments/tip2/7"
+                },
+                {
+                  "name": "apartments/tip2/8"
+                },
+                {
+                  "name": "apartments/tip2/9"
+                },
+                {
+                  "name": "apartments/tip2/10"
+                }
+              ],
+              "imgModel": "apartments/tip2/top",
+              "imgHailight": "apartments/tip2/top",
+              "rooms": [
+                {
+                  "id": 1,
+                  "name": "Predsoblje",
+                  "area": 1.30
+                },
+                {
+                  "id": 2,
+                  "name": "Kupatilo",
+                  "area": 3.46
+                },
+                {
+                  "id": 3,
+                  "name": "Dnevna soba sa trpezarijom",
+                  "area": 17.43
+                },
+                {
+                  "id": 4,
+                  "name": "Soba",
+                  "area": 8.46
+                },
+                {
+                  "id": 5,
+                  "name": "Terasa",
+                  "area": 3.95
+                }
+              ]
+            },
+            {
+              "id": 33,
+              "roomsNumber": 1,
+              "status": "Slobodno",
+              "floor": [
+                {
+                  "id": 1,
+                  "name": "Drugi Sprat"
+                }
+              ],
+              "area": 35.10,
+              "images": [
+                {
+                  "name": "apartments/tip2/1"
+                },
+                {
+                  "name": "apartments/tip2/2"
+                },
+                {
+                  "name": "apartments/tip2/3"
+                },
+                {
+                  "name": "apartments/tip2/4"
+                },
+                {
+                  "name": "apartments/tip2/5"
+                },
+                {
+                  "name": "apartments/tip2/6"
+                },
+                {
+                  "name": "apartments/tip2/7"
+                },
+                {
+                  "name": "apartments/tip2/8"
+                },
+                {
+                  "name": "apartments/tip2/9"
+                },
+                {
+                  "name": "apartments/tip2/10"
+                }
+              ],
+              "imgModel": "apartments/tip2/top",
+              "imgHailight": "apartments/tip2/top",
+              "rooms": [
+                {
+                  "id": 1,
+                  "name": "Predsoblje",
+                  "area": 1.30
+                },
+                {
+                  "id": 2,
+                  "name": "Kupatilo",
+                  "area": 3.46
+                },
+                {
+                  "id": 3,
+                  "name": "Dnevna soba sa trpezarijom",
+                  "area": 17.43
+                },
+                {
+                  "id": 4,
+                  "name": "Soba",
+                  "area": 8.46
+                },
+                {
+                  "id": 5,
+                  "name": "Terasa",
+                  "area": 3.95
+                }
+              ]
+            },
+            {
+              "id": 2,
+              "roomsNumber": 1,
+              "status": "Slobodno",
+              "floor": [
+                {
+                  "id": 1,
+                  "name": "Treci Sprat"
+                }
+              ],
+              "area": 35.10,
+              "images": [
+                {
+                  "name": "apartments/tip2/1"
+                },
+                {
+                  "name": "apartments/tip2/2"
+                },
+                {
+                  "name": "apartments/tip2/3"
+                },
+                {
+                  "name": "apartments/tip2/4"
+                },
+                {
+                  "name": "apartments/tip2/5"
+                },
+                {
+                  "name": "apartments/tip2/6"
+                },
+                {
+                  "name": "apartments/tip2/7"
+                },
+                {
+                  "name": "apartments/tip2/8"
+                },
+                {
+                  "name": "apartments/tip2/9"
+                },
+                {
+                  "name": "apartments/tip2/10"
+                }
+              ],
+              "imgModel": "apartments/tip2/top",
+              "imgHailight": "apartments/tip2/top",
+              "rooms": [
+                {
+                  "id": 1,
+                  "name": "Predsoblje",
+                  "area": 1.30
+                },
+                {
+                  "id": 2,
+                  "name": "Kupatilo",
+                  "area": 3.46
+                },
+                {
+                  "id": 3,
+                  "name": "Dnevna soba sa trpezarijom",
+                  "area": 17.43
+                },
+                {
+                  "id": 4,
+                  "name": "Soba",
+                  "area": 8.46
+                },
+                {
+                  "id": 5,
+                  "name": "Terasa",
+                  "area": 3.95
+                }
+              ]
+            },
+            {
+              "id": 2,
+              "roomsNumber": 1,
+              "status": "Slobodno",
+              "floor": [
+                {
+                  "id": 1,
+                  "name": "Cetvrti Sprat"
+                }
+              ],
+              "area": 35.10,
+              "images": [
+                {
+                  "name": "apartments/tip2/1"
+                },
+                {
+                  "name": "apartments/tip2/2"
+                },
+                {
+                  "name": "apartments/tip2/3"
+                },
+                {
+                  "name": "apartments/tip2/4"
+                },
+                {
+                  "name": "apartments/tip2/5"
+                },
+                {
+                  "name": "apartments/tip2/6"
+                },
+                {
+                  "name": "apartments/tip2/7"
+                },
+                {
+                  "name": "apartments/tip2/8"
+                },
+                {
+                  "name": "apartments/tip2/9"
+                },
+                {
+                  "name": "apartments/tip2/10"
+                }
+              ],
+              "imgModel": "apartments/tip2/top",
+              "imgHailight": "apartments/tip2/top",
+              "rooms": [
+                {
+                  "id": 1,
+                  "name": "Predsoblje",
+                  "area": 1.30
+                },
+                {
+                  "id": 2,
+                  "name": "Kupatilo",
+                  "area": 3.46
+                },
+                {
+                  "id": 3,
+                  "name": "Dnevna soba sa trpezarijom",
+                  "area": 17.43
+                },
+                {
+                  "id": 4,
+                  "name": "Soba",
+                  "area": 8.46
+                },
+                {
+                  "id": 5,
+                  "name": "Terasa",
+                  "area": 3.95
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Vila Elsa II",
+      "sold": false,
+      "headerImage": "asdffaf",
+      "type": [
+        {
+          "id": 1,
+          "apartments": [
+            {
+              "id": 1,
+              "roomsNumber": 2,
+              "status": "Slobodno",
+              "floor": [
+                {
+                  "id": 1,
+                  "name": "Suteren"
+                }
+              ],
+              "area": 44.50,
+              "images": [
+                {
+                  "name": "apartments/tip1/1"
+                },
+                {
+                  "name": "apartments/tip1/2"
+                },
+                {
+                  "name": "apartments/tip1/3"
+                },
+                {
+                  "name": "apartments/tip1/4"
+                },
+                {
+                  "name": "apartments/tip1/5"
+                },
+                {
+                  "name": "apartments/tip1/6"
+                },
+                {
+                  "name": "apartments/tip1/7"
+                },
+                {
+                  "name": "apartments/tip1/8"
+                },
+                {
+                  "name": "apartments/tip1/9"
+                },
+                {
+                  "name": "apartments/tip1/1"
+                }
+              ],
+              "imgModel": "apartments/tip1/top",
+              "imgHailight": "apartments/tip1/top",
+              "rooms": [
+                {
+                  "id": 1,
+                  "name": "Predsoblje",
+                  "area": 1.05
+                },
+                {
+                  "id": 2,
+                  "name": "Kuhinja",
+                  "area": 3
+                },
+                {
+                  "id": 3,
+                  "name": "Dnevna Soba sa trpezarijom",
+                  "area": 15.04
+                },
+                {
+                  "id": 4,
+                  "name": "Degazman",
+                  "area": 1.73
+                },
+                {
+                  "id": 5,
+                  "name": "Soba",
+                  "area": 7.53
+                },
+                {
+                  "id": 6,
+                  "name": "Kupatilo",
+                  "area": 3.63
+                },
+                {
+                  "id": 7,
+                  "name": "Soba",
+                  "area": 8.51
+                },
+                {
+                  "id": 8,
+                  "name": "Terasa",
+                  "area": 4.04
+                }
+              ]
+            },
+            {
+              "id": 6,
+              "roomsNumber": 2,
+              "status": "Slobodno",
+              "floor": [
+                {
+                  "id": 1,
+                  "name": "Suteren"
+                }
+              ],
+              "area": 44.50,
+              "images": [
+                {
+                  "name": "apartments/tip1/1"
+                },
+                {
+                  "name": "apartments/tip1/2"
+                },
+                {
+                  "name": "apartments/tip1/3"
+                },
+                {
+                  "name": "apartments/tip1/4"
+                },
+                {
+                  "name": "apartments/tip1/5"
+                },
+                {
+                  "name": "apartments/tip1/6"
+                },
+                {
+                  "name": "apartments/tip1/7"
+                },
+                {
+                  "name": "apartments/tip1/8"
+                },
+                {
+                  "name": "apartments/tip1/9"
+                },
+                {
+                  "name": "apartments/tip1/1"
+                }
+              ],
+              "imgModel": "apartments/tip1/top",
+              "imgHailight": "apartments/tip1/top",
+              "rooms": [
+                {
+                  "id": 1,
+                  "name": "Predsoblje",
+                  "area": 1.05
+                },
+                {
+                  "id": 2,
+                  "name": "Kuhinja",
+                  "area": 3
+                },
+                {
+                  "id": 3,
+                  "name": "Dnevna Soba sa trpezarijom",
+                  "area": 15.04
+                },
+                {
+                  "id": 4,
+                  "name": "Degazman",
+                  "area": 1.73
+                },
+                {
+                  "id": 5,
+                  "name": "Soba",
+                  "area": 7.53
+                },
+                {
+                  "id": 6,
+                  "name": "Kupatilo",
+                  "area": 3.63
+                },
+                {
+                  "id": 7,
+                  "name": "Soba",
+                  "area": 8.51
+                },
+                {
+                  "id": 8,
+                  "name": "Terasa",
+                  "area": 4.04
+                }
+              ]
+            },
+            {
+              "id": 9,
+              "roomsNumber": 2,
+              "status": "Slobodno",
+              "floor": [
+                {
+                  "id": 1,
+                  "name": "Prizemlje"
+                }
+              ],
+              "area": 44.50,
+              "images": [
+                {
+                  "name": "apartments/tip1/1"
+                },
+                {
+                  "name": "apartments/tip1/2"
+                },
+                {
+                  "name": "apartments/tip1/3"
+                },
+                {
+                  "name": "apartments/tip1/4"
+                },
+                {
+                  "name": "apartments/tip1/5"
+                },
+                {
+                  "name": "apartments/tip1/6"
+                },
+                {
+                  "name": "apartments/tip1/7"
+                },
+                {
+                  "name": "apartments/tip1/8"
+                },
+                {
+                  "name": "apartments/tip1/9"
+                },
+                {
+                  "name": "apartments/tip1/1"
+                }
+              ],
+              "imgModel": "apartments/tip1/top",
+              "imgHailight": "apartments/tip1/top",
+              "rooms": [
+                {
+                  "id": 1,
+                  "name": "Predsoblje",
+                  "area": 1.05
+                },
+                {
+                  "id": 2,
+                  "name": "Kuhinja",
+                  "area": 3
+                },
+                {
+                  "id": 3,
+                  "name": "Dnevna Soba sa trpezarijom",
+                  "area": 15.04
+                },
+                {
+                  "id": 4,
+                  "name": "Degazman",
+                  "area": 1.73
+                },
+                {
+                  "id": 5,
+                  "name": "Soba",
+                  "area": 7.53
+                },
+                {
+                  "id": 6,
+                  "name": "Kupatilo",
+                  "area": 3.63
+                },
+                {
+                  "id": 7,
+                  "name": "Soba",
+                  "area": 8.51
+                },
+                {
+                  "id": 8,
+                  "name": "Terasa",
+                  "area": 4.04
+                }
+              ]
+            },
+            {
+              "id": 10,
+              "roomsNumber": 2,
+              "status": "Slobodno",
+              "floor": [
+                {
+                  "id": 1,
+                  "name": "Prizemlje"
+                }
+              ],
+              "area": 44.50,
+              "images": [
+                {
+                  "name": "apartments/tip1/1"
+                },
+                {
+                  "name": "apartments/tip1/2"
+                },
+                {
+                  "name": "apartments/tip1/3"
+                },
+                {
+                  "name": "apartments/tip1/4"
+                },
+                {
+                  "name": "apartments/tip1/5"
+                },
+                {
+                  "name": "apartments/tip1/6"
+                },
+                {
+                  "name": "apartments/tip1/7"
+                },
+                {
+                  "name": "apartments/tip1/8"
+                },
+                {
+                  "name": "apartments/tip1/9"
+                },
+                {
+                  "name": "apartments/tip1/1"
+                }
+              ],
+              "imgModel": "apartments/tip1/top",
+              "imgHailight": "apartments/tip1/top",
+              "rooms": [
+                {
+                  "id": 1,
+                  "name": "Predsoblje",
+                  "area": 1.05
+                },
+                {
+                  "id": 2,
+                  "name": "Kuhinja",
+                  "area": 3
+                },
+                {
+                  "id": 3,
+                  "name": "Dnevna Soba sa trpezarijom",
+                  "area": 15.04
+                },
+                {
+                  "id": 4,
+                  "name": "Degazman",
+                  "area": 1.73
+                },
+                {
+                  "id": 5,
+                  "name": "Soba",
+                  "area": 7.53
+                },
+                {
+                  "id": 6,
+                  "name": "Kupatilo",
+                  "area": 3.63
+                },
+                {
+                  "id": 7,
+                  "name": "Soba",
+                  "area": 8.51
+                },
+                {
+                  "id": 8,
+                  "name": "Terasa",
+                  "area": 4.04
+                }
+              ]
+            },
+            {
+              "id": 20,
+              "roomsNumber": 2,
+              "status": "Slobodno",
+              "floor": [
+                {
+                  "id": 1,
+                  "name": "Prvi Sprat"
+                }
+              ],
+              "area": 44.50,
+              "images": [
+                {
+                  "name": "apartments/tip1/1"
+                },
+                {
+                  "name": "apartments/tip1/2"
+                },
+                {
+                  "name": "apartments/tip1/3"
+                },
+                {
+                  "name": "apartments/tip1/4"
+                },
+                {
+                  "name": "apartments/tip1/5"
+                },
+                {
+                  "name": "apartments/tip1/6"
+                },
+                {
+                  "name": "apartments/tip1/7"
+                },
+                {
+                  "name": "apartments/tip1/8"
+                },
+                {
+                  "name": "apartments/tip1/9"
+                },
+                {
+                  "name": "apartments/tip1/1"
+                }
+              ],
+              "imgModel": "apartments/tip1/top",
+              "imgHailight": "apartments/tip1/top",
+              "rooms": [
+                {
+                  "id": 1,
+                  "name": "Predsoblje",
+                  "area": 1.05
+                },
+                {
+                  "id": 2,
+                  "name": "Kuhinja",
+                  "area": 3
+                },
+                {
+                  "id": 3,
+                  "name": "Dnevna Soba sa trpezarijom",
+                  "area": 15.04
+                },
+                {
+                  "id": 4,
+                  "name": "Degazman",
+                  "area": 1.73
+                },
+                {
+                  "id": 5,
+                  "name": "Soba",
+                  "area": 7.53
+                },
+                {
+                  "id": 6,
+                  "name": "Kupatilo",
+                  "area": 3.63
+                },
+                {
+                  "id": 7,
+                  "name": "Soba",
+                  "area": 8.51
+                },
+                {
+                  "id": 8,
+                  "name": "Terasa",
+                  "area": 4.04
+                }
+              ]
+            },
+            {
+              "id": 26,
+              "roomsNumber": 2,
+              "status": "Slobodno",
+              "floor": [
+                {
+                  "id": 1,
+                  "name": "Prvi Sprat"
+                }
+              ],
+              "area": 44.50,
+              "images": [
+                {
+                  "name": "apartments/tip1/1"
+                },
+                {
+                  "name": "apartments/tip1/2"
+                },
+                {
+                  "name": "apartments/tip1/3"
+                },
+                {
+                  "name": "apartments/tip1/4"
+                },
+                {
+                  "name": "apartments/tip1/5"
+                },
+                {
+                  "name": "apartments/tip1/6"
+                },
+                {
+                  "name": "apartments/tip1/7"
+                },
+                {
+                  "name": "apartments/tip1/8"
+                },
+                {
+                  "name": "apartments/tip1/9"
+                },
+                {
+                  "name": "apartments/tip1/1"
+                }
+              ],
+              "imgModel": "apartments/tip1/top",
+              "imgHailight": "apartments/tip1/top",
+              "rooms": [
+                {
+                  "id": 1,
+                  "name": "Predsoblje",
+                  "area": 1.05
+                },
+                {
+                  "id": 2,
+                  "name": "Kuhinja",
+                  "area": 3
+                },
+                {
+                  "id": 3,
+                  "name": "Dnevna Soba sa trpezarijom",
+                  "area": 15.04
+                },
+                {
+                  "id": 4,
+                  "name": "Degazman",
+                  "area": 1.73
+                },
+                {
+                  "id": 5,
+                  "name": "Soba",
+                  "area": 7.53
+                },
+                {
+                  "id": 6,
+                  "name": "Kupatilo",
+                  "area": 3.63
+                },
+                {
+                  "id": 7,
+                  "name": "Soba",
+                  "area": 8.51
+                },
+                {
+                  "id": 8,
+                  "name": "Terasa",
+                  "area": 4.04
+                }
+              ]
+            },
+            {
+              "id": 27,
+              "roomsNumber": 2,
+              "status": "Slobodno",
+              "floor": [
+                {
+                  "id": 1,
+                  "name": "Prvi Sprat"
+                }
+              ],
+              "area": 44.50,
+              "images": [
+                {
+                  "name": "apartments/tip1/1"
+                },
+                {
+                  "name": "apartments/tip1/2"
+                },
+                {
+                  "name": "apartments/tip1/3"
+                },
+                {
+                  "name": "apartments/tip1/4"
+                },
+                {
+                  "name": "apartments/tip1/5"
+                },
+                {
+                  "name": "apartments/tip1/6"
+                },
+                {
+                  "name": "apartments/tip1/7"
+                },
+                {
+                  "name": "apartments/tip1/8"
+                },
+                {
+                  "name": "apartments/tip1/9"
+                },
+                {
+                  "name": "apartments/tip1/1"
+                }
+              ],
+              "imgModel": "apartments/tip1/top",
+              "imgHailight": "apartments/tip1/top",
+              "rooms": [
+                {
+                  "id": 1,
+                  "name": "Predsoblje",
+                  "area": 1.05
+                },
+                {
+                  "id": 2,
+                  "name": "Kuhinja",
+                  "area": 3
+                },
+                {
+                  "id": 3,
+                  "name": "Dnevna Soba sa trpezarijom",
+                  "area": 15.04
+                },
+                {
+                  "id": 4,
+                  "name": "Degazman",
+                  "area": 1.73
+                },
+                {
+                  "id": 5,
+                  "name": "Soba",
+                  "area": 7.53
+                },
+                {
+                  "id": 6,
+                  "name": "Kupatilo",
+                  "area": 3.63
+                },
+                {
+                  "id": 7,
+                  "name": "Soba",
+                  "area": 8.51
+                },
+                {
+                  "id": 8,
+                  "name": "Terasa",
+                  "area": 4.04
+                }
+              ]
+            },
+            {
+              "id": 31,
+              "roomsNumber": 2,
+              "status": "Slobodno",
+              "floor": [
+                {
+                  "id": 1,
+                  "name": "Drugi Sprat"
+                }
+              ],
+              "area": 44.50,
+              "images": [
+                {
+                  "name": "apartments/tip1/1"
+                },
+                {
+                  "name": "apartments/tip1/2"
+                },
+                {
+                  "name": "apartments/tip1/3"
+                },
+                {
+                  "name": "apartments/tip1/4"
+                },
+                {
+                  "name": "apartments/tip1/5"
+                },
+                {
+                  "name": "apartments/tip1/6"
+                },
+                {
+                  "name": "apartments/tip1/7"
+                },
+                {
+                  "name": "apartments/tip1/8"
+                },
+                {
+                  "name": "apartments/tip1/9"
+                },
+                {
+                  "name": "apartments/tip1/1"
+                }
+              ],
+              "imgModel": "apartments/tip1/top",
+              "imgHailight": "apartments/tip1/top",
+              "rooms": [
+                {
+                  "id": 1,
+                  "name": "Predsoblje",
+                  "area": 1.05
+                },
+                {
+                  "id": 2,
+                  "name": "Kuhinja",
+                  "area": 3
+                },
+                {
+                  "id": 3,
+                  "name": "Dnevna Soba sa trpezarijom",
+                  "area": 15.04
+                },
+                {
+                  "id": 4,
+                  "name": "Degazman",
+                  "area": 1.73
+                },
+                {
+                  "id": 5,
+                  "name": "Soba",
+                  "area": 7.53
+                },
+                {
+                  "id": 6,
+                  "name": "Kupatilo",
+                  "area": 3.63
+                },
+                {
+                  "id": 7,
+                  "name": "Soba",
+                  "area": 8.51
+                },
+                {
+                  "id": 8,
+                  "name": "Terasa",
+                  "area": 4.04
+                }
+              ]
+            },
+            {
+              "id": 42,
+              "roomsNumber": 2,
+              "status": "Slobodno",
+              "floor": [
+                {
+                  "id": 1,
+                  "name": "Treci Sprat"
+                }
+              ],
+              "area": 44.50,
+              "images": [
+                {
+                  "name": "apartments/tip1/1"
+                },
+                {
+                  "name": "apartments/tip1/2"
+                },
+                {
+                  "name": "apartments/tip1/3"
+                },
+                {
+                  "name": "apartments/tip1/4"
+                },
+                {
+                  "name": "apartments/tip1/5"
+                },
+                {
+                  "name": "apartments/tip1/6"
+                },
+                {
+                  "name": "apartments/tip1/7"
+                },
+                {
+                  "name": "apartments/tip1/8"
+                },
+                {
+                  "name": "apartments/tip1/9"
+                },
+                {
+                  "name": "apartments/tip1/1"
+                }
+              ],
+              "imgModel": "apartments/tip1/top",
+              "imgHailight": "apartments/tip1/top",
+              "rooms": [
+                {
+                  "id": 1,
+                  "name": "Predsoblje",
+                  "area": 1.05
+                },
+                {
+                  "id": 2,
+                  "name": "Kuhinja",
+                  "area": 3
+                },
+                {
+                  "id": 3,
+                  "name": "Dnevna Soba sa trpezarijom",
+                  "area": 15.04
+                },
+                {
+                  "id": 4,
+                  "name": "Degazman",
+                  "area": 1.73
+                },
+                {
+                  "id": 5,
+                  "name": "Soba",
+                  "area": 7.53
+                },
+                {
+                  "id": 6,
+                  "name": "Kupatilo",
+                  "area": 3.63
+                },
+                {
+                  "id": 7,
+                  "name": "Soba",
+                  "area": 8.51
+                },
+                {
+                  "id": 8,
+                  "name": "Terasa",
+                  "area": 4.04
+                }
+              ]
+            },
+            {
+              "id": 43,
+              "roomsNumber": 2,
+              "status": "Slobodno",
+              "floor": [
+                {
+                  "id": 1,
+                  "name": "Cetvrti Sprat"
+                }
+              ],
+              "area": 44.50,
+              "images": [
+                {
+                  "name": "apartments/tip1/1"
+                },
+                {
+                  "name": "apartments/tip1/2"
+                },
+                {
+                  "name": "apartments/tip1/3"
+                },
+                {
+                  "name": "apartments/tip1/4"
+                },
+                {
+                  "name": "apartments/tip1/5"
+                },
+                {
+                  "name": "apartments/tip1/6"
+                },
+                {
+                  "name": "apartments/tip1/7"
+                },
+                {
+                  "name": "apartments/tip1/8"
+                },
+                {
+                  "name": "apartments/tip1/9"
+                },
+                {
+                  "name": "apartments/tip1/1"
+                }
+              ],
+              "imgModel": "apartments/tip1/top",
+              "imgHailight": "apartments/tip1/top",
+              "rooms": [
+                {
+                  "id": 1,
+                  "name": "Predsoblje",
+                  "area": 1.05
+                },
+                {
+                  "id": 2,
+                  "name": "Kuhinja",
+                  "area": 3
+                },
+                {
+                  "id": 3,
+                  "name": "Dnevna Soba sa trpezarijom",
+                  "area": 15.04
+                },
+                {
+                  "id": 4,
+                  "name": "Degazman",
+                  "area": 1.73
+                },
+                {
+                  "id": 5,
+                  "name": "Soba",
+                  "area": 7.53
+                },
+                {
+                  "id": 6,
+                  "name": "Kupatilo",
+                  "area": 3.63
+                },
+                {
+                  "id": 7,
+                  "name": "Soba",
+                  "area": 8.51
+                },
+                {
+                  "id": 8,
+                  "name": "Terasa",
+                  "area": 4.04
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "apartments": [
+            {
+              "id": 2,
+              "roomsNumber": 1,
+              "status": "Slobodno",
+              "floor": [
+                {
+                  "id": 1,
+                  "name": "Suteren"
+                }
+              ],
+              "area": 35.10,
+              "images": [
+                {
+                  "name": "apartments/tip2/1"
+                },
+                {
+                  "name": "apartments/tip2/2"
+                },
+                {
+                  "name": "apartments/tip2/3"
+                },
+                {
+                  "name": "apartments/tip2/4"
+                },
+                {
+                  "name": "apartments/tip2/5"
+                },
+                {
+                  "name": "apartments/tip2/6"
+                },
+                {
+                  "name": "apartments/tip2/7"
+                },
+                {
+                  "name": "apartments/tip2/8"
+                },
+                {
+                  "name": "apartments/tip2/9"
+                },
+                {
+                  "name": "apartments/tip2/10"
+                }
+              ],
+              "imgModel": "apartments/tip2/top",
+              "imgHailight": "apartments/tip2/top",
+              "rooms": [
+                {
+                  "id": 1,
+                  "name": "Predsoblje",
+                  "area": 1.30
+                },
+                {
+                  "id": 2,
+                  "name": "Kupatilo",
+                  "area": 3.46
+                },
+                {
+                  "id": 3,
+                  "name": "Dnevna soba sa trpezarijom",
+                  "area": 17.43
+                },
+                {
+                  "id": 4,
+                  "nae": "Soba",
+                  "area": 8.46
+                },
+                {
+                  "id": 5,
+                  "name": "Terasa",
+                  "area": 3.95
+                }
+              ]
+            },
+            {
+              "id": 2,
+              "roomsNumber": 1,
+              "status": "Slobodno",
+              "floor": [
+                {
+                  "id": 1,
+                  "name": "Prizemlje"
+                }
+              ],
+              "area": 35.10,
+              "images": [
+                {
+                  "name": "apartments/tip2/1"
+                },
+                {
+                  "name": "apartments/tip2/2"
+                },
+                {
+                  "name": "apartments/tip2/3"
+                },
+                {
+                  "name": "apartments/tip2/4"
+                },
+                {
+                  "name": "apartments/tip2/5"
+                },
+                {
+                  "name": "apartments/tip2/6"
+                },
+                {
+                  "name": "apartments/tip2/7"
+                },
+                {
+                  "name": "apartments/tip2/8"
+                },
+                {
+                  "name": "apartments/tip2/9"
+                },
+                {
+                  "name": "apartments/tip2/10"
+                }
+              ],
+              "imgModel": "apartments/tip2/top",
+              "imgHailight": "apartments/tip2/top",
+              "rooms": [
+                {
+                  "id": 1,
+                  "name": "Predsoblje",
+                  "area": 1.30
+                },
+                {
+                  "id": 2,
+                  "name": "Kupatilo",
+                  "area": 3.46
+                },
+                {
+                  "id": 3,
+                  "name": "Dnevna soba sa trpezarijom",
+                  "area": 17.43
+                },
+                {
+                  "id": 4,
+                  "name": "Sba",
+                  "area": 8.46
+                },
+                {
+                  "id": 5,
+                  "name": "Terasa",
+                  "area": 3.95
+                }
+              ]
+            },
+            {
+              "id": 2,
+              "roomsNumber": 1,
+              "status": "Slobodno",
+              "floor": [
+                {
+                  "id": 1,
+                  "name": "Prvi Sprat"
+                }
+              ],
+              "area": 35.10,
+              "images": [
+                {
+                  "name": "apartments/tip2/1"
+                },
+                {
+                  "name": "apartments/tip2/2"
+                },
+                {
+                  "name": "apartments/tip2/3"
+                },
+                {
+                  "name": "apartments/tip2/4"
+                },
+                {
+                  "name": "apartments/tip2/5"
+                },
+                {
+                  "name": "apartments/tip2/6"
+                },
+                {
+                  "name": "apartments/tip2/7"
+                },
+                {
+                  "name": "apartments/tip2/8"
+                },
+                {
+                  "name": "apartments/tip2/9"
+                },
+                {
+                  "name": "apartments/tip2/10"
+                }
+              ],
+              "imgModel": "apartments/tip2/top",
+              "imgHailight": "apartments/tip2/top",
+              "rooms": [
+                {
+                  "id": 1,
+                  "name": "Predsoblje",
+                  "area": 1.30
+                },
+                {
+                  "id": 2,
+                  "name": "Kupatilo",
+                  "area": 3.46
+                },
+                {
+                  "id": 3,
+                  "name": "Dnevna soba sa trpezarijom",
+                  "area": 17.43
+                },
+                {
+                  "id": 4,
+                  "name": "Soba",
+                  "area": 8.46
+                },
+                {
+                  "id": 5,
+                  "name": "Terasa",
+                  "area": 3.95
+                }
+              ]
+            },
+            {
+              "id": 33,
+              "roomsNumber": 1,
+              "status": "Slobodno",
+              "floor": [
+                {
+                  "id": 1,
+                  "name": "Drugi Sprat"
+                }
+              ],
+              "area": 35.10,
+              "images": [
+                {
+                  "name": "apartments/tip2/1"
+                },
+                {
+                  "name": "apartments/tip2/2"
+                },
+                {
+                  "name": "apartments/tip2/3"
+                },
+                {
+                  "name": "apartments/tip2/4"
+                },
+                {
+                  "name": "apartments/tip2/5"
+                },
+                {
+                  "name": "apartments/tip2/6"
+                },
+                {
+                  "name": "apartments/tip2/7"
+                },
+                {
+                  "name": "apartments/tip2/8"
+                },
+                {
+                  "name": "apartments/tip2/9"
+                },
+                {
+                  "name": "apartments/tip2/10"
+                }
+              ],
+              "imgModel": "apartments/tip2/top",
+              "imgHailight": "apartments/tip2/top",
+              "rooms": [
+                {
+                  "id": 1,
+                  "name": "Predsoblje",
+                  "area": 1.30
+                },
+                {
+                  "id": 2,
+                  "name": "Kupatilo",
+                  "area": 3.46
+                },
+                {
+                  "id": 3,
+                  "name": "Dnevna soba sa trpezarijom",
+                  "area": 17.43
+                },
+                {
+                  "id": 4,
+                  "name": "Soba",
+                  "area": 8.46
+                },
+                {
+                  "id": 5,
+                  "name": "Terasa",
+                  "area": 3.95
+                }
+              ]
+            },
+            {
+              "id": 2,
+              "roomsNumber": 1,
+              "status": "Slobodno",
+              "floor": [
+                {
+                  "id": 1,
+                  "name": "Treci Sprat"
+                }
+              ],
+              "area": 35.10,
+              "images": [
+                {
+                  "name": "apartments/tip2/1"
+                },
+                {
+                  "name": "apartments/tip2/2"
+                },
+                {
+                  "name": "apartments/tip2/3"
+                },
+                {
+                  "name": "apartments/tip2/4"
+                },
+                {
+                  "name": "apartments/tip2/5"
+                },
+                {
+                  "name": "apartments/tip2/6"
+                },
+                {
+                  "name": "apartments/tip2/7"
+                },
+                {
+                  "name": "apartments/tip2/8"
+                },
+                {
+                  "name": "apartments/tip2/9"
+                },
+                {
+                  "name": "apartments/tip2/10"
+                }
+              ],
+              "imgModel": "apartments/tip2/top",
+              "imgHailight": "apartments/tip2/top",
+              "rooms": [
+                {
+                  "id": 1,
+                  "name": "Predsoblje",
+                  "area": 1.30
+                },
+                {
+                  "id": 2,
+                  "name": "Kupatilo",
+                  "area": 3.46
+                },
+                {
+                  "id": 3,
+                  "name": "Dnevna soba sa trpezarijom",
+                  "area": 17.43
+                },
+                {
+                  "id": 4,
+                  "name": "Soba",
+                  "area": 8.46
+                },
+                {
+                  "id": 5,
+                  "name": "Terasa",
+                  "area": 3.95
+                }
+              ]
+            },
+            {
+              "id": 2,
+              "roomsNumber": 1,
+              "status": "Slobodno",
+              "floor": [
+                {
+                  "id": 1,
+                  "name": "Cetvrti Sprat"
+                }
+              ],
+              "area": 35.10,
+              "images": [
+                {
+                  "name": "apartments/tip2/1"
+                },
+                {
+                  "name": "apartments/tip2/2"
+                },
+                {
+                  "name": "apartments/tip2/3"
+                },
+                {
+                  "name": "apartments/tip2/4"
+                },
+                {
+                  "name": "apartments/tip2/5"
+                },
+                {
+                  "name": "apartments/tip2/6"
+                },
+                {
+                  "name": "apartments/tip2/7"
+                },
+                {
+                  "name": "apartments/tip2/8"
+                },
+                {
+                  "name": "apartments/tip2/9"
+                },
+                {
+                  "name": "apartments/tip2/10"
+                }
+              ],
+              "imgModel": "apartments/tip2/top",
+              "imgHailight": "apartments/tip2/top",
+              "rooms": [
+                {
+                  "id": 1,
+                  "name": "Predsoblje",
+                  "area": 1.30
+                },
+                {
+                  "id": 2,
+                  "name": "Kupatilo",
+                  "area": 3.46
+                },
+                {
+                  "id": 3,
+                  "name": "Dnevna soba sa trpezarijom",
+                  "area": 17.43
+                },
+                {
+                  "id": 4,
+                  "name": "Soba",
+                  "area": 8.46
+                },
+                {
+                  "id": 5,
+                  "name": "Terasa",
+                  "area": 3.95
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+
+
+
+

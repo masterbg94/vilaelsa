@@ -1,0 +1,155 @@
+@import "~bootstrap/scss/bootstrap.scss";
+@import "../../../styles/palette";
+
+
+.container{
+	max-width: 1200px;
+	padding: 0;
+	font-family: Montserrat,sans-serif;
+	color: $ve-gray-light;
+	.row{
+		padding: 0;
+		margin: 0;
+
+		.col-sm-6{
+			margin: 0 !important;
+			padding: 0;
+			background: $ve-black;
+			display: flex;
+			flex-direction: column;
+			padding: 0;
+			carousel{
+				&:hover {
+					.search{
+						opacity: 1;
+						transition: 0.8s;
+					}
+				}
+				/deep/{
+
+					.search{
+						width: 100px;
+						height: 100px;
+						background: rgba($ve-black,.7);
+						position: absolute;
+						z-index: 5;
+						top: 200px;
+						left: 250px;
+						padding: 20px;
+						cursor: pointer;
+						opacity: 0;
+						.searchIcon{
+							width: 100%;
+							height: 100%;
+							background-size: cover;
+							transition: 0.4s;
+							&:hover{
+								transform: scale(1.2);
+							}
+
+						}
+
+					}
+					img{
+						width: 100%;
+						height: 500px;
+
+					}
+					.carousel-indicators li{
+						display: none;
+					}
+					.carousel-control-prev-icon{
+						background-image: url("../../../../assets/images/prev-icon.png");
+						width: 55px;
+						height: 55px;
+						cursor: pointer;
+					}
+					.carousel-control-next-icon{
+						background-image: url("../../../../assets/images/foward-icon.png");
+						width: 55px;
+						height: 55px;
+						cursor: pointer;
+					}
+				}
+			}
+
+			&.right{
+				background: $ve-black;
+				.para{
+					height: 100%;
+					width: 100%;
+					display: flex;
+					justify-content: center;
+					flex-direction: column;
+					padding-left: 80px;
+					padding-right: 80px;
+					.btn{
+						color: $ve-black;
+						width: 100%;
+						background: $ve-gold;
+						border-radius: 0 !important;
+						margin-top: 20px;
+						&:hover {
+							color: white;
+						}
+					}
+					p{
+						font-size: 14px;
+						font-weight: 300;
+						display: flex;
+						justify-items: center;
+						text-align: center;
+						align-self: center;
+					}
+				}
+
+			}
+		}
+	}
+}
+
+
+@media screen and (max-width: 768px) {
+
+		.col-sm-6 {
+				carousel{
+					/deep/{
+						img{
+							height: 450px !important;
+						}
+						.search{
+							display: none;
+						}
+					}
+				}
+			&.right {
+				.para {
+					padding-left: 10px !important;
+					padding-right: 10px !important;
+				}
+			}
+		}
+}
+
+
+@media screen and (max-width: 570px) {
+
+	.col-sm-6 {
+			carousel{
+				/deep/{
+					img{
+						height: 250px !important;
+					}
+					.search{
+						display: none;
+					}
+				}
+			}
+
+		&.right {
+			.para {
+				padding: 40px 10px 40px 10px !important;
+			}
+		}
+	}
+}

@@ -1,0 +1,122 @@
+@import "~bootstrap/scss/bootstrap.scss";
+@import "../../../styles/palette";
+
+.container-fluid{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+}
+
+:host app-ribbon{
+	/deep/{
+		.ribbon{
+
+		}
+	}
+}
+.row{
+	display: flex;
+	padding: 0;
+	margin: 0;
+	.one, .two{
+		display: flex;
+		flex-direction: row;
+	}
+	.col-sm-6{
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		button{
+			font-size: 14px;
+			font-weight: 400;
+			font-family: Montserrat, sans-serif;
+			text-align: center;
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			padding: 10px 15px;
+		}
+		p{
+			font-size: 12px;
+			font-weight: 400;
+			font-family: Montserrat, sans-serif;
+			text-align: center;
+			padding: 20px 10px;
+			justify-content: center;
+			align-items: center;
+			display: flex;
+			margin-bottom: 40px;
+		}
+
+		img{
+			width: 100%;
+			height: 100%;
+		}
+		&.e1{
+			background: $ve-black;
+			color: #D9D9D9;
+			.btn{
+				color: $ve-black;
+				background: $ve-gold;
+				border-radius: 0;
+				outline: none;
+				transition: 0.3s;
+				&:hover{
+					color: white;
+					transition: 0.3s;
+				}
+			}
+		}
+		&.e2{
+			background: $ve-gray;
+			color: $ve-black;
+			.btn{
+				color:#D9D9D9;
+				background:$ve-black;
+				border-radius: 0;
+				outline: none;
+				transition: 0.3s;
+				&:hover{
+					color: $ve-gold;
+					transition: 0.3s;
+				}
+			}
+		}
+	}
+}
+
+
+@media screen and (max-width: 992px) {
+	.container-fluid{
+		position: relative;
+	}
+	.one{
+		min-width: 100%;
+		flex-direction: column !important;
+		.col-sm-6{
+			min-width: 100%;
+			p{
+				font-size: 14px;
+			}
+		}
+	}
+	.two{
+		min-width: 100%;
+		flex-direction: column-reverse !important;
+		.col-sm-6{
+			min-width: 100%;
+			p{
+				font-size: 14px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 570px){
+
+}

@@ -1,0 +1,93 @@
+@import '../../../styles/palette';
+@import "~bootstrap/scss/bootstrap.scss";
+
+.container-fluid{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background: white;
+	.container{
+		margin: auto;
+		display: block;
+		max-width: 1200px;
+		.row{
+			background: $ve-black;
+			width: 100%;
+			padding-left: 0;
+			padding-right: 0;
+			margin-right: 0;
+			margin-left: 0;
+			span{
+				font-family: Montserrat,sans-serif;
+				font-size: 16px;
+				font-weight: 400;
+				color: $ve-gold;
+				padding: 0 20px 20px 20px;
+			}
+			p{
+				font-family: Montserrat,sans-serif;
+				font-size: 14px;
+				font-weight: 300;
+				color: white;
+				margin-bottom: 0;
+				padding-left: 20px;
+				padding-right: 20px;
+
+			}
+
+			.col-sm-6{
+				text-align: center;
+				display: flex;
+				flex-direction: column;
+				align-self: center;
+				padding: 0;
+			}
+
+
+		}
+	}
+
+}
+carousel {
+	position: relative;
+
+	/deep/ {
+		.carousel-indicators li {
+			display: none;
+		}
+		.carousel-indicators {
+		}
+		.carousel-control-prev-icon {
+			background-image: url("../../../../assets/images/prev-icon.png");
+			width: 35px;
+			height: 35px;
+			cursor: pointer;
+		}
+		.carousel-control-next-icon {
+			background-image: url("../../../../assets/images/foward-icon.png");
+			width: 35px;
+			height: 35px;
+			cursor: pointer;
+		}
+		img{
+			height: 250px;
+		}
+	}
+}
+
+
+@media screen and (max-width: 570px) {
+	.col-sm-6{
+		padding: 0 0 30px 0 !important;
+
+		&.slider{
+			carousel{
+				/deep/{
+					img{
+						height: 200px !important;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,257 @@
+@import "~bootstrap/scss/bootstrap.scss";
+@import "../../../styles/palette";
+
+app-header {
+	/deep/{
+		.header-text{
+			display: none !important;
+		}
+	}
+}
+
+app-ribbon{
+	/deep/ {
+		.ribbon{
+			text-transform: uppercase !important;
+		}
+	}
+}
+
+.vila2{
+	.container{
+		padding: 0;
+		width: 100%;
+		background: $ve-black;
+		.row{
+			padding: 0;
+			.col-sm-12{
+				font-size: 28px;
+				color: #D9D9D9;
+				font-family: Montserrat, sans-serif;
+				font-weight: 400;
+				padding: 100px 20px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+		}
+	}
+}
+.container{
+	padding: 0;
+	width: 100%;
+	.row{
+		margin: 0;
+		padding: 0;
+		display: flex;
+
+		.col-sm-12{
+			margin: 0;
+			padding: 0;
+			.pagination{
+				background: $ve-black;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				border-radius: 0 !important;
+				font-family: Montserrat,sans-serif;
+				color: white;
+				font-weight: 400;
+				font-size: 16px;
+				.total{
+					justify-content: center;
+					padding: 20px 0 10px 0;
+					display: flex;
+					flex-direction: column;
+					text-align: center;
+					font-size: 14px;
+					span{
+						font-size: 20px;
+						color: $ve-gold;
+					}
+				}
+				pagination{
+					/deep/
+					{
+						.page-item.active .page-link{
+							background: $ve-gold !important;
+							color: $ve-black;
+						}
+						ul.pagination {
+							display: flex;
+							justify-content: center;
+							margin-bottom: 0;
+							padding: 0 0 20px 0;
+
+							li{
+								a.page-link{
+									background: $ve-black;
+									border: 0;
+									color: $ve-gold;
+									box-shadow: none !important;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		.col-sm-6{
+			padding: 0;
+			margin: 0;
+			table {
+				margin-bottom: 0 !important;
+				/deep/ {
+
+					th {
+						border: 0 !important;
+						font-weight: 400 !important;
+					}
+					td {
+						border: 0 !important;
+					}
+
+					tbody{
+						tr {
+							background: $ve-gray;
+							border: 0 !important;
+							font-size: 14px;
+							font-family: Montserrat,sans-serif;
+							color: $ve-black;
+							cursor: pointer;
+							&:hover {
+								background: $ve-gold;
+								transition: 0.3s;
+							}
+
+							&:nth-child(odd){
+								background: $ve-gray-light;
+								&:hover {
+									background: $ve-gold;
+									transition: 0.3s;
+								}
+							}
+						}
+						th {
+							border: 0 !important;
+						}
+					}
+					thead{
+						background: $ve-black;
+						border: 0 !important;
+						font-size: 14px;
+						font-family: Montserrat,sans-serif;
+						color: $ve-gray-light;
+						font-weight: 400;
+						tr{
+							border: 0 !important;
+						}
+						th {
+							border: 0 !important;
+						}
+					}
+
+				}
+			}
+			&.right{
+				.para{
+					height: 100%;
+					width: 100%;
+					display: flex;
+					justify-content: center;
+					flex-direction: column;
+					padding-left: 80px;
+					padding-right: 80px;
+					font-family: Montserrat,sans-serif;
+					.btn{
+						color: $ve-gray-light;
+						width: 100%;
+						background: $ve-black;
+						border-radius: 0 !important;
+						margin-top: 20px;
+						font-weight: 400;
+						font-size: 16px;
+
+						&:hover {
+							color: $ve-gold;
+						}
+					}
+					p{
+						font-size: 14px;
+						font-weight: 300;
+						display: flex;
+						justify-items: center;
+						text-align: center;
+						align-self: center;
+						color: #95989A;
+					}
+				}
+
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 768px){
+	.row.table{
+		display: flex;
+		flex-direction: column-reverse;
+		.col-sm-6{
+			min-width: 100%;
+			&.right{
+				padding: 40px 0;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 570px){
+
+	app-container{
+		/deep/{
+			.container{
+				padding: 0 !important;
+			}
+		}
+	}
+	.row.table{
+		display: flex;
+		flex-direction: column-reverse;
+		.col-sm-6{
+			min-width: 100%;
+			table {
+				margin-bottom: 0 !important;
+				/deep/ {
+
+					th {
+						border: 0 !important;
+						font-weight: 400 !important;
+						padding: 0.50rem 0.30rem !important;
+						font-size: 12px !important;
+					}
+					td {
+						border: 0 !important;
+						padding: 0.50rem !important;
+					}
+
+					tbody {
+						tr {
+
+							font-size: 12px !important;
+						}
+					th {
+						border: 0 !important;
+					}
+				}
+					}
+				}
+
+			&.right{
+				padding: 40px 0;
+				.para {
+					padding: 0 10px !important;
+				}
+			}
+			}
+		}
+	}

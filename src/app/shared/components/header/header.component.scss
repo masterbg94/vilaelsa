@@ -1,0 +1,60 @@
+@import "~bootstrap/scss/bootstrap.scss";
+@import "../../../styles/palette";
+
+.container-fluid {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	max-height: 100%;
+	display: flex;
+	flex-grow: 1;
+	flex-direction: column;
+	overflow: hidden;
+	border-bottom: 20px solid #1F1F1F;
+	.row{
+		display: flex;
+		flex-grow: 1;
+		justify-content: center;
+		.col-sm-12 {
+			width: 100%;
+			height: 100%;
+			display: flex;
+			img {
+				display:flex;
+				flex-grow: 1;
+				height: 100%;
+				width: 100%;
+				background-size: cover;
+				background-position: top;
+				position: relative;
+			}
+			.header-text{
+				font-size: 16px;
+				color: white;
+				background: rgba($ve-black,.7);
+				display: flex;
+				flex-direction: column;
+				font-family: Montserrat,sans-serif;
+				justify-content: center;
+				position: absolute;
+				top: 45%;
+				left:20%;
+				right: 20%;
+				align-items: center;
+				align-self: center;
+				padding: 20px;
+				z-index: 1;
+
+				span{
+					display: flex;
+					font-weight: 300;
+					&.sub{
+						font-weight: 500;
+					}
+
+				}
+			}
+		}
+	}
+
+}

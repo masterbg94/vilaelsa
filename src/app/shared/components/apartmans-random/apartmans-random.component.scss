@@ -1,0 +1,319 @@
+@import "~bootstrap/scss/bootstrap.scss";
+@import "../../../styles/palette";
+
+.row {
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	display: flex;
+}
+
+.col-sm-6 {
+	margin: 0;
+	padding: 0;
+
+	&.text {
+		padding: 0;
+		margin: 0;
+		flex-direction: column;
+		display: flex;
+	}
+
+	&.slide-container {
+
+		.slide {
+			flex-direction: row;
+			display: flex;
+			background: $ve-black;
+
+			.slider {
+				padding: 0;
+				margin: 0;
+
+				carousel {
+
+					/deep/ {
+						.carousel-inner {
+							height: 100%;
+						}
+
+						.carousel-indicators li {
+							display: none;
+						}
+
+						.carousel-control-prev-icon {
+							background-image: url("../../../../assets/images/prev-icon.png");
+							width: 35px;
+							height: 35px;
+							cursor: pointer;
+						}
+
+						.carousel-control-next-icon {
+							background-image: url("../../../../assets/images/foward-icon.png");
+							width: 35px;
+							height: 35px;
+							cursor: pointer;
+						}
+
+						img {
+							background-size: cover !important;
+							height: 298px;
+							width: 100%;
+						}
+					}
+				}
+			}
+
+			.text {
+				color: $ve-gray-light;
+
+				.container {
+					box-sizing: border-box;
+					padding: 20px;
+
+					span.status {
+						font-size: 12px;
+						font-weight: 400;
+						padding: 5px;
+						color:white !important;
+						float: right;
+						box-sizing: border-box;
+						font-family: Montserrat,sans-serif;
+						&.free{
+							background: $ve-green;
+						}
+						&.red{
+							background: $ve-red;
+						}
+						&.reserve{
+							background: $ve-gold;
+						}
+					}
+
+					.building-type {
+						display: flex;
+						flex-direction: row;
+
+						span {
+							font-family: Montserrat, sans-serif;
+							font-size: 16px;
+							font-weight: 400;
+
+							&.building {
+								color: $ve-gray-light;
+								font-size: 16px;
+								&.russian{
+									font-size: 15px;
+								}
+							}
+
+							&.type {
+								color: $ve-gold;
+								margin-left: 10px;
+							}
+						}
+					}
+
+					.description {
+						font-family: Montserrat, sans-serif;
+						font-size: 12px;
+						font-weight: 400;
+						margin: 5px 0 0;
+					}
+
+					.icons {
+						display: flex;
+						justify-content: space-between;
+						flex-wrap: wrap;
+						align-self: flex-start;
+
+						.icon {
+							display: flex;
+							margin-top: 10px;
+
+							.image {
+								background-size: cover !important;
+								width: 39px;
+								height: 39px;
+
+								&-area {
+									background: url("../../../../assets/images/square.png") no-repeat;
+								}
+
+								&-rooms {
+									background: url("../../../../assets/images/rooms.png") no-repeat;
+								}
+
+								&-bathrooms {
+									background: url("../../../../assets/images/bathroom.png") no-repeat;
+								}
+							}
+
+							.info {
+								display: flex;
+								flex-direction: column;
+
+								span {
+									font-size: 12px;
+									font-family: Montserrat, sans-serif;
+									font-weight: 400;
+									text-align: left;
+									display: flex;
+									flex-direction: column;
+									padding-left: 10px;
+
+									&.count {
+										font-weight: 500;
+										font-size: 14px;
+									}
+								}
+							}
+						}
+					}
+				}
+
+				.btn {
+					border-radius: 0 !important;
+					font-size: 14px;
+					font-family: Montserrat, sans-serif;
+					font-weight: 300;
+					width: 100%;
+					display: flex;
+					background: $ve-gold;
+				}
+			}
+		}
+
+		&:nth-child(3n),
+		&:nth-child(2n) {
+
+			.slide {
+				background: $ve-gray !important;
+			}
+		}
+
+		&:nth-child(4n) {
+
+			.slide {
+				background: $ve-gold !important;
+			}
+		}
+
+		&:nth-child(3),
+		&:nth-child(4),
+		&:nth-child(7),
+		&:nth-child(8) {
+
+			.slide {
+				flex-direction: row-reverse !important;
+			}
+		}
+
+		&:nth-child(3n),
+		&:nth-child(2n),
+		&:nth-child(4n) {
+
+			.slide {
+
+				.text {
+					color: $ve-black;
+
+					.container {
+
+						.building-type {
+
+							span {
+								color: $ve-black;
+							}
+						}
+
+						.description {
+							color: $ve-black;
+						}
+
+						.icons {
+
+							.icon {
+
+								.image {
+
+									&-area {
+										background: url("../../../../assets/images/square-black.png") no-repeat;
+									}
+
+									&-rooms {
+										background: url("../../../../assets/images/rooms-black.png") no-repeat;
+									}
+
+									&-bathrooms {
+										background: url("../../../../assets/images/bathroom-black.png") no-repeat;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		&:nth-child(2n),
+		&:nth-child(4n) {
+
+			.slide {
+
+				.text {
+
+					.btn {
+						background: $ve-black;
+						color: $ve-gray-light;
+
+						&:hover {
+							color: $ve-gold;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+@media screen and (max-width: 768px) {
+	.row {
+		flex-direction: column;
+		.col-sm-6.slide-container {
+			min-width: 100%;
+			.btn {
+				position: absolute;
+				bottom: 0;
+			}
+			&:nth-child(2n){
+
+				.row.slide{
+					flex-direction: row-reverse !important;
+				}
+			}
+			&:nth-child(3){
+				.row.slide{
+					flex-direction: row !important;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 570px) {
+	.row {
+		flex-direction: column;
+		.col-sm-6.slide-container {
+			min-width: 100%;
+			.btn {
+				position: relative;
+				bottom: 0;
+			}
+		}
+	}
+	.container{
+		padding-left: 0;
+		padding-right: 0;
+	}
+}

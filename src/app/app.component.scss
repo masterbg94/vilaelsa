@@ -1,0 +1,67 @@
+@import "styles/palette";
+
+section.site {
+	.container{
+		width: 1200px;
+		z-index: 20;
+		padding: 0;
+	}
+
+	header.header {
+
+		display: flex;
+		background: transparent;
+		min-height: 53px;
+		flex-direction: row;
+		position: fixed;
+		z-index: 10;
+		left:10%;
+		right: 10%;
+		transition: all .5s ease-in-out;
+
+		/deep/ {
+
+			.navbar-brand {
+				transition: all .5s ease-in-out;
+				margin-top: 0;
+			}
+		}
+
+		&.hidden {
+			margin-top: -40px;
+
+			/deep/ {
+
+				.navbar-brand {
+					margin-top: 40px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 992px){
+
+	header.header {
+		background: $ve-black !important;
+		position: relative !important;
+		left: 0 !important;
+		right: 0 !important;
+		transition: top 0.2s ease-in-out;
+	}
+
+	&.hidden {
+		margin-top: 0 !important;
+
+		/deep/ {
+
+			.navbar-brand {
+				margin-top: 0 !important;
+			}
+		}
+	}
+
+	#header{
+		transition: top 0.2s ease-in-out;
+	}
+}
