@@ -4,7 +4,7 @@ import './polyfills';
 
 import { AppModule } from './app/app.module';
 import { environment } from './environments/environment';
-// import 'hammer.js';
+import 'hammerjs';
 
 if (environment.production) {
   enableProdMode();

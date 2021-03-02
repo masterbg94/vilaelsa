@@ -4,8 +4,16 @@ app-header{
       max-height: 600px!important;
       object-fit: cover !important;
     }
+    .player .vp-title .vp-portrait{
+      display: none!important;
+    }
   }
 }
 .embed-container{
-
+  min-height: 500px;
+  background: #363636;
+}
+iframe{
+  width: 100%;
+  min-height: 500px;
 }
