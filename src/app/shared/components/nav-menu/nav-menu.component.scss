@@ -141,10 +141,10 @@ button.dropdown-item[_ngcontent-c1]
 		align-self: center;
 		justify-content: flex-end;
 	}
-	&:first-child{
+	&:nth-of-type(odd){
 		background: $ve-gray;
 	}
-	&:last-child {
+	&:nth-of-type(even) {
 		background: $ve-gray-light;
 	}
 	&:hover{

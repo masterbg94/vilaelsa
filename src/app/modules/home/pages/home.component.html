@@ -1,6 +1,6 @@
 <div class="container-fluid" style="position: relative">
 	<app-slider [apartments]="apartments" [types]="types" [floors]="floors" [images]="images" [floor]="floors?.name" [numberOfBathrooms]="numOfBathroom"></app-slider>
-	<app-ribbon style="gold">{{'SliderRibbon' | translate}}</app-ribbon>
+	<app-ribbon>{{'SliderRibbon' | translate}}</app-ribbon>
 	<app-container>
 		<div class="row">
 			<div class="one">
@@ -23,6 +23,18 @@
 
 				<div class="col-sm-6">
 					<img src="../../../../assets/images/elsa2.png">
+				</div>
+			</div>
+
+			<div class="one">
+				<div class="col-sm-6">
+					<img src="../../../../assets/images/elsa3.jpg">
+				</div>
+				<div class="col-sm-6 e1">
+					<p [innerHtml]=" 'VillaElsaIIIdescription' | translate">
+
+					</p>
+					<button class="btn btn-gold" routerLink="building/3">{{'VillaElsaIII' | translate}}</button>
 				</div>
 			</div>
 
