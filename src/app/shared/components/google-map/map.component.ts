@@ -1,4 +1,4 @@
-import {AfterViewChecked, Component, Input, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {BuildingModel} from '../../model/building.model';
 
 @Component({
@@ -14,6 +14,7 @@ export class MapComponent implements OnInit
 	@Input() building = false;
 	@Input() IsBuilding1 = false;
 	@Input() IsBuilding2 = false;
+	@Input() IsBuilding3 = false;
 	@Input() lat: number;
 	@Input() lng: number;
 	text = '';
@@ -48,10 +49,16 @@ export class MapComponent implements OnInit
 			lng:       19.7024379,
 			label:     '',
 			draggable: false
+		},
+		{
+			lat: 43.721054,
+			lng: 19.701710,
+			label: '',
+			draggable: false
 		}
 	];
 	// google maps zoom level
-			 zoom              = 15;
+	 zoom = 15;
 
 	// initial center position for the map
 
@@ -85,6 +92,12 @@ export class MapComponent implements OnInit
 			this.text = 'Vila Elsa II';
 			this.city = 'Zlatibor';
 			this.address = 'Krfska BB';
+		} if (this.IsBuilding3 && this.building) {
+			this.lat = 43.721054;
+			this.lng = 19.701710;
+			this.text = 'Vila Elsa III';
+			this.city = 'Zlatibor';
+			this.address = 'Sportova';
 		}
 	}
 }
