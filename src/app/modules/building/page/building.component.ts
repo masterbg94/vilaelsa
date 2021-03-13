@@ -60,6 +60,7 @@ export class BuildingComponent implements OnInit, AfterViewInit
 
 	img1 = '../../../../assets/images/building-main.png';
 	img2 = '../../../../assets/images/elsa2header.png';
+	img3 = '../../../../assets/images/elsa3.png';
 
 	pager = {
 		page:     1,

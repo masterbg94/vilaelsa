@@ -1,6 +1,6 @@
 <app-header *ngIf="activeBuilding?.id == 1" [headerTextSubBuilding]="'text1'| translate" [headerTextBuilding]="activeBuilding.name | translate" [headerImg]="img1"></app-header>
 <app-header *ngIf="activeBuilding?.id == 2" [headerTextSubBuilding]="'text2' | translate" [headerImg]="img2" [headerTextBuilding]="activeBuilding.name | translate"></app-header>
-<app-header *ngIf="activeBuilding?.id == 3" [headerTextSubBuilding]="'text2' | translate" [headerImg]="img2" [headerTextBuilding]="activeBuilding.name | translate"></app-header>
+<app-header *ngIf="activeBuilding?.id == 3" [headerTextSubBuilding]="'text3' | translate" [headerImg]="img3" [headerTextBuilding]="activeBuilding.name | translate"></app-header>
 <app-container>
 	<app-filter (onTypeChange)="onTypeChange($event)"
 				(onFloorChange)="onFloorChange($event)"
