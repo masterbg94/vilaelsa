@@ -1,5 +1,6 @@
 <app-header [headerImg]="headerImage1" *ngIf="apartment?.buildingId == 1"></app-header>
 <app-header [headerImg]="headerImage2" *ngIf="apartment?.buildingId == 2"></app-header>
+<app-header [headerImg]="headerImage3" *ngIf="apartment?.buildingId == 3"></app-header>
 <app-header-sub *ngIf="apartment?.buildingId == 1">
 	<div class="alert" *ngIf="apartment?.status == 'Slobodno'">
 		<app-alert style="success" [showing]="apartment"> {{'AvailableApartment' | translate}}...</app-alert>

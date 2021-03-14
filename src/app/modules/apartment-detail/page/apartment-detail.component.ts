@@ -34,6 +34,7 @@ export class ApartmentDetailComponent implements OnInit
 
 	headerImage1 = '../../../../assets/images/header1.png';
 	headerImage2 = '../../../../assets/images/headerDetailElsaII1.png';
+	headerImage3 = '../../../../assets/images/headerDetailElsaII1.png';
 	headerSubImage = '../../../../assets/images/headerDetailElsaII.png';
 
 	constructor(private buildingService: BuildingsService,

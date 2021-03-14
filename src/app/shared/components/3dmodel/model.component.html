@@ -35,5 +35,16 @@
 			</div>
 		</div>
 
+		<div class="col-sm-6 right" *ngIf="activeBuilding == 3">
+			<app-ribbon style="gold">{{'Opremljenost' | translate}}</app-ribbon>
+			<div class="para">
+				<p>{{'VilaElsaIIIModelDescriptionP1' | translate}} </p>
+				<p>
+					{{'VilaElsaIIIModelDescriptionP2' | translate}}
+				</p>
+				<button class="btn btn-gold" routerLink="/contact">{{'ReserveOnTime' | translate}}</button>
+			</div>
+		</div>
+
 	</div>
 </div>
