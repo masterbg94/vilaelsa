@@ -41,6 +41,10 @@ const routes: Routes = [
 	{
 		path: 'gallery',
 		loadChildren: 'app/modules/gallery/gallery.module#GalleryModule'
+	},
+	{
+		path: 'premises/:id',
+		loadChildren: 'app/modules/premises/premises.module#PremisesModule'
 	}
 ];
 

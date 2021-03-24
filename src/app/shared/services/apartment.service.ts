@@ -74,7 +74,7 @@ export class ApartmentService {
 
 	public getApartmentByB(buildingId): any {
 
-		return this.http.get(`${API_BASE}/buildings/${buildingId}/apartments`);
+		return this.http.get(`${API_BASE}/buildings/${buildingId}/apartments` , {});
 	}
 
 	updateApartment(apartmentId: number, status: string): Observable<boolean> {

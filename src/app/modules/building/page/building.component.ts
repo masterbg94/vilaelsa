@@ -7,27 +7,27 @@ import {Apartment} from '../../../shared/model/building.model';
 import {FilterComponent} from '../../../shared/components/filter/filter.component';
 
 @Component({
-	moduleId:    module.id,
-	selector:    'app-building',
+	moduleId: module.id,
+	selector: 'app-building',
 	templateUrl: './building.component.html',
-	styleUrls:   ['./building.component.scss'],
-	providers:   [
+	styleUrls: ['./building.component.scss'],
+	providers: [
 		BuildingsService,
 		ApartmentService,
 	]
 })
 
-export class BuildingComponent implements OnInit, AfterViewInit
-{
+export class BuildingComponent implements OnInit, AfterViewInit {
 	constructor(
 		private buildingService: BuildingsService,
 		private apartmentService: ApartmentService,
 		private route: ActivatedRoute
-	) {}
+	) {
+	}
 
 	filter = {
-		type:    null,
-		floor:   null,
+		type: null,
+		floor: null,
 		areaMin: null,
 		areaMax: null
 	};
@@ -63,20 +63,21 @@ export class BuildingComponent implements OnInit, AfterViewInit
 	img3 = '../../../../assets/images/elsa3.png';
 
 	pager = {
-		page:     1,
+		page: 1,
 		pageSize: 10
 	};
 
 	@ViewChild(FilterComponent)
 	public filterComponent: FilterComponent;
 
-	ngOnInit() {}
+	ngOnInit() {
+	}
 
 	ngAfterViewInit() {
 		this.route.params.subscribe(params => {
 			this.filter = {
-				type:    null,
-				floor:   null,
+				type: null,
+				floor: null,
 				areaMin: null,
 				areaMax: null
 			};
@@ -93,7 +94,7 @@ export class BuildingComponent implements OnInit, AfterViewInit
 
 			this.filterComponent.selectedArea = {
 				min: null,
-				max : null,
+				max: null,
 				selected: null
 			};
 
@@ -101,19 +102,17 @@ export class BuildingComponent implements OnInit, AfterViewInit
 		});
 	}
 
-	public getBuilding(buildingId: number)
-	{
+	public getBuilding(buildingId: number) {
 		this.buildingService
 			.getBulidingById(buildingId)
 			.subscribe(building => {
-				this.activeBuilding   = building;
+				this.activeBuilding = building;
 				this.activeBuildingId = building.id;
 				this.loadData();
 			});
 	}
 
-	public loadData()
-	{
+	public loadData() {
 		this.apartmentService
 			.getApartmentByBuilding(this.activeBuilding.id, this.filter, this.pager)
 			.subscribe((restData: RestData<Apartment>) => {
@@ -138,29 +137,24 @@ export class BuildingComponent implements OnInit, AfterViewInit
 			});
 	}
 
-	onTypeChange(type: any): void
-	{
+	onTypeChange(type: any): void {
 		this.filter.type = type.id;
 	}
 
-	onFloorChange(floor: any): void
-	{
+	onFloorChange(floor: any): void {
 		this.filter.floor = floor.id;
 	}
 
-	onAreaChange(area: any): void
-	{
+	onAreaChange(area: any): void {
 		this.filter.areaMax = area.max;
 		this.filter.areaMin = area.min;
 	}
 
-	onFilter(): void
-	{
+	onFilter(): void {
 		this.loadData();
 	}
 
-	goToPage(pager: any): void
-	{
+	goToPage(pager: any): void {
 		this.pager.page = pager.page;
 		this.loadData();
 	}

@@ -1,188 +1,200 @@
 <div class="menu" style="display: flex;flex-direction: row">
-	<a class="navbar-brand" [routerLink]="['/']" (click)="navbarCollapsed = false"><img
-		src='../../../../assets/images/logo.png'></a>
-	<div class="submenu" style="width: 100%;">
-		<ul class="info">
-			<li class="phone">
-				<a href="tel:063305500" class="phone-link" [routerLink]="['/']" (click)="navbarCollapsed = false">381 63
-					305 500
-				</a>
+    <a class="navbar-brand" [routerLink]="['/']" (click)="navbarCollapsed = false"><img
+            src='../../../../assets/images/logo.png'></a>
+    <div class="submenu" style="width: 100%;">
+        <ul class="info">
+            <li class="phone">
+                <a href="tel:063305500" class="phone-link" [routerLink]="['/']" (click)="navbarCollapsed = false">381 63
+                    305 500
+                </a>
 
-				<a href="tel:063305500">
-					<img class="phone-icon" src="../../../../assets/images/phone.png">
-				</a>
-			</li>
+                <a href="tel:063305500">
+                    <img class="phone-icon" src="../../../../assets/images/phone.png">
+                </a>
+            </li>
 
-			<li class="email">
-				<a class="mail-link" href="mailto:prodajavilaelsa@gmail.com" target="_top">prodajavilaelsa@gmail.com</a>
-			</li>
+            <li class="email">
+                <a class="mail-link" href="mailto:prodajavilaelsa@gmail.com" target="_top">prodajavilaelsa@gmail.com</a>
+            </li>
 
-			<div class="right">
-				<li class="lng" ngbDropdown #myDrop="ngbDropdown" aria-expanded=false [routerLinkActive]="['active']"
-					style="background: white">
+            <div class="right">
+                <li class="lng" ngbDropdown #myDrop="ngbDropdown" aria-expanded=false [routerLinkActive]="['active']"
+                    style="background: white">
 
-					<a class="nav-link"
-					   role="button"
-					   ngbDropdownToggle
-					   style="cursor: pointer;user-select: none;display: flex">
+                    <a class="nav-link"
+                       role="button"
+                       ngbDropdownToggle
+                       style="cursor: pointer;user-select: none;display: flex">
 
-						<img class="flag" src="{{currentImg}}">
+                        <img class="flag" src="{{currentImg}}">
 
-						{{currentLng | translate}}
+                        {{currentLng | translate}}
 
-						<i class="fas fa-caret-down"></i>
-					</a>
-					<div ngbDropdownMenu class="dropdown-menu show lng" aria-labelledby="dropdownManual"
-						 (click)="navbarCollapsed = false" style="background: white">
-						<button class="dropdown-item lang" *ngFor="let l of lng"
-								(click)="setLng(l.jezik, l.img, l.activeLang)" style="background: white;">{{l.jezik |
-							translate}} <img class="flag" [src]="l.img"></button>
-					</div>
-				</li>
-				<li class="social">
-					<div class="circule f">
-						<i class="fab fa-facebook-f"></i>
-					</div>
-					<div class="circule t">
-						<i class="fab fa-twitter"></i>
-					</div>
-					<div class="circule y">
-						<i class="fab fa-youtube"></i>
-					</div>
-					<div class="circule g">
-						<i class="fab fa-google-plus-g"></i>
-					</div>
-					<div class="circule p">
-						<i class="fab fa-pinterest-p"></i>
-					</div>
-				</li>
-			</div>
-		</ul>
-		<header class="navbar navbar-light navbar-fixed-top navbar-expand-lg" style="z-index: 20;position: relative">
-			<button class="navbar-toggler navbar-toggler-right"
-					[class.active]="navbarCollapsed"
-					type="button" (click)="toggle()" id="nav-toggle" href="#"
-					[attr.aria-expanded]="navbarCollapsed" aria-controls="navbarContent" aria-expanded="false"
-					aria-label="Toggle navigation">
-				<span></span>
-			</button>
+                        <i class="fas fa-caret-down"></i>
+                    </a>
+                    <div ngbDropdownMenu class="dropdown-menu show lng" aria-labelledby="dropdownManual"
+                         (click)="navbarCollapsed = false" style="background: white">
+                        <button class="dropdown-item lang" *ngFor="let l of lng"
+                                (click)="setLng(l.jezik, l.img, l.activeLang)" style="background: white;">{{l.jezik |
+                            translate}} <img class="flag" [src]="l.img"></button>
+                    </div>
+                </li>
+                <li class="social">
+                    <div class="circule f">
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                    <div class="circule t">
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                    <div class="circule y">
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                    <div class="circule g">
+                        <i class="fab fa-google-plus-g"></i>
+                    </div>
+                    <div class="circule p">
+                        <i class="fab fa-pinterest-p"></i>
+                    </div>
+                </li>
+            </div>
+        </ul>
+        <header class="navbar navbar-light navbar-fixed-top navbar-expand-lg" style="z-index: 20;position: relative">
+            <button class="navbar-toggler navbar-toggler-right"
+                    [class.active]="navbarCollapsed"
+                    type="button" (click)="toggle()" id="nav-toggle" href="#"
+                    [attr.aria-expanded]="navbarCollapsed" aria-controls="navbarContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span></span>
+            </button>
 
-			<div class="navbar-collapse" [ngbCollapse]="!navbarCollapsed" id="navbarContent">
+            <div class="navbar-collapse" [ngbCollapse]="!navbarCollapsed" id="navbarContent">
 
-				<ul class="navbar-nav mr-auto" [@slideInOut]="!navbarCollapsed">
-					<li class="nav-item"
-						[routerLinkActive]="['active']"
-						[routerLinkActiveOptions]="{ exact: true }"
-						[@showText]="!navbarCollapsed && windowWidth < 992">
+                <ul class="navbar-nav mr-auto" [@slideInOut]="!navbarCollapsed">
+                    <li class="nav-item"
+                        [routerLinkActive]="['active']"
+                        [routerLinkActiveOptions]="{ exact: true }"
+                        [@showText]="!navbarCollapsed && windowWidth < 992">
 
-						<a class="nav-link"
-						   role="button"
-						   [routerLink]="['/']"
-						   (click)="doClick()">
+                        <a class="nav-link"
+                           role="button"
+                           [routerLink]="['/']"
+                           (click)="doClick()">
 
-							{{'HomeLink' | translate}}
+                            {{'HomeLink' | translate}}
 
-							<i class="fas fa-chevron-right"
-							   [@showCarret]="!navbarCollapsed && windowWidth < 992"></i>
-						</a>
-					</li>
+                            <i class="fas fa-chevron-right"
+                               [@showCarret]="!navbarCollapsed && windowWidth < 992"></i>
+                        </a>
+                    </li>
 
-					<li class="nav-item d-inline-block"
-						ngbDropdown #myDrop="ngbDropdown"
-						aria-expanded=false
-						[routerLinkActive]="['active']"
-						[@showText]="!navbarCollapsed && windowWidth < 992">
+                    <li class="nav-item d-inline-block"
+                        ngbDropdown #myDrop="ngbDropdown"
+                        aria-expanded=false
+                        [routerLinkActive]="['active']"
+                        [@showText]="!navbarCollapsed && windowWidth < 992">
 
-						<a class="nav-link"
-						   role="button"
-						   ngbDropdownToggle
-						   style="cursor: pointer;user-select: none;"
-						   (click)="navbarCollapsed">
+                        <a class="nav-link"
+                           role="button"
+                           ngbDropdownToggle
+                           style="cursor: pointer;user-select: none;"
+                           (click)="navbarCollapsed">
 
-							{{'Apartments' | translate}}
-							<i
-								[@showCarret]="!navbarCollapsed && windowWidth< 992 "
-								class="fas fa-chevron-down"
-							></i>
-						</a>
-						<div ngbDropdownMenu aria-labelledby="dropdownManual" (click)="doClick()">
-							<button class="dropdown-item" [routerLink]="['/building/1']" >{{'VillaElsaI' | translate}}<i
-								class="fas fa-chevron-right "
-							></i></button>
-							<button class="dropdown-item" [routerLink]="['/building/2']">{{'VillaElsaII' | translate}}<i
-								class="fas fa-chevron-right"
-							></i></button>
-							<button class="dropdown-item" [routerLink]="['/building/3']">{{'VillaElsaIII' | translate}}<i
-									class="fas fa-chevron-right"
-							></i></button>
-						</div>
-					</li>
-					<li class="nav-item d-inline-block"
-						ngbDropdown #myDrop="ngbDropdown"
-						aria-expanded=false
-						[routerLinkActive]="['active']"
-						[@showText]="!navbarCollapsed && windowWidth < 992"
-					>
-						<a class="nav-link"
-						   role="button"
-						   ngbDropdownToggle
-						   (click)="navbarCollapsed"
-						   style="cursor: pointer;user-select: none;"
-						>{{'GARAGES' | translate}}
-							<i
-								[@showCarret]="!navbarCollapsed && windowWidth < 992"
-								class="fas fa-chevron-down"
-							></i>
-						</a>
-						<div ngbDropdownMenu aria-labelledby="dropdownManual" (click)="doClick()">
-							<button class="dropdown-item" [routerLink]="['/building/1/garages']">{{'GARAGE' |
-								translate}} {{'VillaElsaI' | translate}} <i
-									class="fas fa-chevron-right"
-								></i></button>
-							<button class="dropdown-item" [routerLink]="['/building/2/garages']">{{'GARAGE' | translate}} {{'VillaElsaII' | translate}}
-								<i
-									class="fas fa-chevron-right"
-								></i></button>
-							<button class="dropdown-item" [routerLink]="['/building/3/garages']">{{'GARAGE' | translate}} {{'VillaElsaIII' | translate}}
-								<i
-										class="fas fa-chevron-right"
-								></i></button>
-						</div>
-					</li>
-					<li class="nav-item" [routerLinkActive]="['active']" [@showText]="!navbarCollapsed && windowWidth < 992">
-						<a class="nav-link" [routerLink]="['/investitor']" (click)="doClick()">{{'Investitor' |
-							translate}}
-							<i [@showCarret]="!navbarCollapsed && windowWidth < 992"
-							   class="fas fa-chevron-right"
-							></i>
-						</a>
-					</li>
+                            {{'Apartments' | translate}}
+                            <i
+                                    [@showCarret]="!navbarCollapsed && windowWidth< 992 "
+                                    class="fas fa-chevron-down"
+                            ></i>
+                        </a>
+                        <div ngbDropdownMenu aria-labelledby="dropdownManual" (click)="doClick()">
+                            <button class="dropdown-item" [routerLink]="['/building/1']">{{'VillaElsaI' | translate}}<i
+                                    class="fas fa-chevron-right "
+                            ></i></button>
+                            <button class="dropdown-item" [routerLink]="['/building/2']">{{'VillaElsaII' | translate}}<i
+                                    class="fas fa-chevron-right"
+                            ></i></button>
+                            <button class="dropdown-item" [routerLink]="['/building/3']">{{'VillaElsaIII' | translate}}
+                                <i
+                                        class="fas fa-chevron-right"
+                                ></i></button>
+                        </div>
+                    </li>
+                    <li class="nav-item d-inline-block"
+                        ngbDropdown #myDrop="ngbDropdown"
+                        aria-expanded=false
+                        [routerLinkActive]="['active']"
+                        [@showText]="!navbarCollapsed && windowWidth < 992"
+                    >
+                        <a class="nav-link"
+                           role="button"
+                           ngbDropdownToggle
+                           (click)="navbarCollapsed"
+                           style="cursor: pointer;user-select: none;"
+                        >{{'GARAGES' | translate}}
+                            <i
+                                    [@showCarret]="!navbarCollapsed && windowWidth < 992"
+                                    class="fas fa-chevron-down"
+                            ></i>
+                        </a>
+                        <div ngbDropdownMenu aria-labelledby="dropdownManual" (click)="doClick()">
+                            <button class="dropdown-item" [routerLink]="['/building/1/garages']">{{'GARAGE' |
+                                translate}} {{'VillaElsaI' | translate}} <i
+                                    class="fas fa-chevron-right"
+                            ></i></button>
+                            <button class="dropdown-item"
+                                    [routerLink]="['/building/2/garages']">{{'GARAGE' | translate}} {{'VillaElsaII' | translate}}
+                                <i
+                                        class="fas fa-chevron-right"
+                                ></i></button>
+                            <button class="dropdown-item"
+                                    [routerLink]="['/building/3/garages']">{{'GARAGE' | translate}} {{'VillaElsaIII' | translate}}
+                                <i
+                                        class="fas fa-chevron-right"
+                                ></i></button>
+                        </div>
+                    </li>
+                    <li class="nav-item" [routerLinkActive]="['active']"
+                        [@showText]="!navbarCollapsed && windowWidth < 992">
+                        <a class="nav-link" [routerLink]="['/premises/3']"
+                           (click)="doClick()">{{'Locals' | translate}}</a>
+                    </li>
 
-					<li class="nav-item" [routerLinkActive]="['active']" [@showText]="!navbarCollapsed && windowWidth < 992">
-						<a class="nav-link" [routerLink]="['/location']" (click)="doClick()">{{'Location' | translate}}
-							<i [@showCarret]="!navbarCollapsed && windowWidth < 992"
-							   class="fas fa-chevron-right"
-							></i>
-						</a>
-					</li>
+                    <li class="nav-item" [routerLinkActive]="['active']"
+                        [@showText]="!navbarCollapsed && windowWidth < 992">
+                        <a class="nav-link" [routerLink]="['/investitor']" (click)="doClick()">{{'Investitor' |
+                            translate}}
+                            <i [@showCarret]="!navbarCollapsed && windowWidth < 992"
+                               class="fas fa-chevron-right"
+                            ></i>
+                        </a>
+                    </li>
 
-					<li class="nav-item" [routerLinkActive]="['active']" [@showText]="!navbarCollapsed && windowWidth < 992">
-						<a class="nav-link" [routerLink]="['/gallery']" (click)="doClick()">{{'Gallery' | translate}}
-							<i [@showCarret]="!navbarCollapsed && windowWidth < 992"
-							   class="fas fa-chevron-right"
-							></i>
-						</a>
-					</li>
+                    <li class="nav-item" [routerLinkActive]="['active']"
+                        [@showText]="!navbarCollapsed && windowWidth < 992">
+                        <a class="nav-link" [routerLink]="['/location']" (click)="doClick()">{{'Location' | translate}}
+                            <i [@showCarret]="!navbarCollapsed && windowWidth < 992"
+                               class="fas fa-chevron-right"
+                            ></i>
+                        </a>
+                    </li>
 
-					<div class="right">
-						<li class="nav-item kontakt" [routerLinkActive]="['active']">
-							<a class="nav-link kontakt" [routerLink]="['/contact']" (click)="doClick()"
-							   [@contact]="!navbarCollapsed && windowWidth < 992">{{'Contact' | translate}}
-							</a>
-						</li>
-					</div>
-				</ul>
-			</div>
-		</header>
-	</div>
+                    <li class="nav-item" [routerLinkActive]="['active']"
+                        [@showText]="!navbarCollapsed && windowWidth < 992">
+                        <a class="nav-link" [routerLink]="['/gallery']" (click)="doClick()">{{'Gallery' | translate}}
+                            <i [@showCarret]="!navbarCollapsed && windowWidth < 992"
+                               class="fas fa-chevron-right"
+                            ></i>
+                        </a>
+                    </li>
+
+                    <div class="right">
+                        <li class="nav-item kontakt" [routerLinkActive]="['active']">
+                            <a class="nav-link kontakt" [routerLink]="['/contact']" (click)="doClick()"
+                               [@contact]="!navbarCollapsed && windowWidth < 992">{{'Contact' | translate}}
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </header>
+    </div>
 </div>

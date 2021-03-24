@@ -1,9 +1,8 @@
-import {ChangeDetectorRef, Component, EventEmitter, Input, OnDestroy, OnInit, Output} from '@angular/core';
+import {Component, EventEmitter, Input, OnDestroy, OnInit, Output} from '@angular/core';
 import {TypeService} from '../../services/type.service';
 import {FloorService} from '../../services/floor.service';
 import {Floor, Type} from '../../model/building.model';
 import {TranslateService} from 'ng2-translate';
-import {ISubscription} from 'rxjs/Subscription';
 
 @Component({
 	moduleId: module.id,
@@ -108,7 +107,11 @@ export class FilterComponent implements OnInit, OnDestroy{
 	getFloors() {
 		 this.floorService.getFloorByBuilding(this.activeBuilding)
 			.subscribe(floors => {
-				this.availableFloors = floors;
+				if (this.activeBuilding === 3) {
+					this.availableFloors = floors.filter(x => x.name != 'Suteren');
+				} else {
+					this.availableFloors = floors;
+				}
 			});
 	}
 

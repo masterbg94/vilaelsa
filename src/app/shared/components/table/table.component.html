@@ -27,7 +27,13 @@
 			</span>
 		</div>
 		<div class="col-sm-6">
-			<div *ngIf="apartment?.imgHailight" class="base" ng-box [src]="'../../../../assets/images/' + apartment?.imgHailight" [image]="true" [cache]="true"  [style.display.none]="title"   style="cursor: pointer;transition: 0.2s;">
+			<div *ngIf="apartment?.imgHailight"
+				 class="base"
+				 ng-box
+				 [src]="'../../../../assets/images/' + apartment?.imgHailight"
+				 [image]="true" [cache]="true"
+				 [style.display.none]="title"
+				 style="cursor: pointer;transition: 0.2s;">
 				<div class="search">
 					<img class="searchIcon" src="../../../../assets/images/lupa.png">
 				</div>

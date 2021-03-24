@@ -30,10 +30,10 @@ export class GarageComponent implements OnInit {
 	totalItems: number;
 
 
-
 	constructor(private buildingService: BuildingsService,
 				private garageService: GarageService,
-				private route: ActivatedRoute) {}
+				private route: ActivatedRoute) {
+	}
 
 	ngOnInit() {
 		this.route.params
@@ -41,8 +41,8 @@ export class GarageComponent implements OnInit {
 				this.getBuilding(params['id']);
 			});
 	}
-	public getBuilding(buildingId: number)
-	{
+
+	public getBuilding(buildingId: number) {
 		this.buildingService
 			.getBulidingById(buildingId)
 			.subscribe(building => {
@@ -50,6 +50,7 @@ export class GarageComponent implements OnInit {
 				this.getGaragesByBuilding();
 			});
 	}
+
 	public getGaragesByBuilding() {
 		this.garageService.getByBuilding(this.activeBuilding.id, this.pager)
 			.subscribe((garages: RestData<Garage>) => {

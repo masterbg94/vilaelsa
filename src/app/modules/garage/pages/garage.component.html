@@ -1,71 +1,74 @@
-
 <ngbox></ngbox>
 <app-header *ngIf="activeBuilding?.id == 1"></app-header>
 <app-header *ngIf="activeBuilding?.id == 2" [headerImg]="headerElsa2"></app-header>
-<app-header-sub  [headerSubImage]="headerSubImage"></app-header-sub>
+<app-header-sub [headerSubImage]="headerSubImage"></app-header-sub>
 <app-ribbon style="gold">{{'GARAGE' | translate}} {{activeBuilding?.name | translate}} </app-ribbon>
 <app-container>
 
 
-	<div class="container">
-		<div class="row table">
-			<div class="col-sm-6">
-				<table class="table">
-					<thead>
-					<tr>
-						<th>{{'Number' | translate}}</th>
-						<th>{{'Parking' | translate}}</th>
-						<th>{{'Area' | translate}}</th>
-						<th>{{'Status' | translate}}</th>
-						<th>{{'Orjentacija' | translate}}</th>
-					</tr>
-					</thead>
-					<tbody>
-					<tr  *ngFor="let garage of garages" >
-						<th>{{garage?.garageNumber}}</th>
-						<td>{{garage?.name}}</td>
-						<td>{{garage?.area}}m²</td>
-						<td>{{garage?.status | translate}}</td>
-						<div *ngIf="garage" ng-box  [src]="'../../../../assets/images/' + garage.imgHailight" [image]="true" [cache]="true"   [style.display.none]="title"   style="z-index: 200;cursor: pointer;transition: 0.2s;;">
-						<td><img src="../../../../assets/images/carret-table.png" style="width: 20px"></td>
-						</div>
-					</tr>
+    <div class="container">
+        <div class="row table">
+            <div class="col-sm-6">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>{{'Number' | translate}}</th>
+                        <th>{{'Parking' | translate}}</th>
+                        <th>{{'Area' | translate}}</th>
+                        <th>{{'Status' | translate}}</th>
+                        <th>{{'Orjentacija' | translate}}</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr *ngFor="let garage of garages">
+                        <th>{{garage?.garageNumber}}</th>
+                        <td>{{garage?.name}}</td>
+                        <td>{{garage?.area}}m²</td>
+                        <td>{{garage?.status | translate}}</td>
+                        <div *ngIf="garage" ng-box
+                             [src]="'../../../../assets/images/' + garage.imgHailight"
+                             [image]="true" [cache]="true"
+                             [style.display.none]="title"
+                             style="z-index: 200;cursor: pointer;transition: 0.2s;">
+                            <td><img src="../../../../assets/images/carret-table.png" style="width: 20px"></td>
+                        </div>
+                    </tr>
 
-					</tbody>
-				</table>
-			</div>
-			<div class="col-sm-6 right">
-				<div class="para">
-					<p *ngIf="activeBuilding?.id == 1">
-						{{'GarageElsaP1' | translate}}
-					</p>
-					<p>
-						{{'GarageElsaP2' | translate}}
-					</p>
-					<button class="btn btn-gold" routerLink="/contact">{{'ReserveOnTime' | translate}}</button>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm-12">
-				<div class="pagination">
-					<div class="total">
-						{{'UkupnoGaraza' | translate}} <span>{{totalItems}}</span>
-					</div>
-					<pagination
-						(pageChanged)="goToPage($event)"
-						[rotate]="true"
-						[maxSize]="3"
-						[boundaryLinks]="true"
-						[previousText]="'&lsaquo;'"
-						[nextText]="'&rsaquo;'"
-						[firstText]="'&laquo;'"
-						[lastText]="'&raquo;'"
-						[itemsPerPage]="pager.pageSize"
-						[totalItems]="totalItems">
-					</pagination>
-				</div>
-			</div>
-		</div>
-	</div>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-sm-6 right">
+                <div class="para">
+                    <p *ngIf="activeBuilding?.id == 1">
+                        {{'GarageElsaP1' | translate}}
+                    </p>
+                    <p>
+                        {{'GarageElsaP2' | translate}}
+                    </p>
+                    <button class="btn btn-gold" routerLink="/contact">{{'ReserveOnTime' | translate}}</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="pagination">
+                    <div class="total">
+                        {{'UkupnoGaraza' | translate}} <span>{{totalItems}}</span>
+                    </div>
+                    <pagination
+                            (pageChanged)="goToPage($event)"
+                            [rotate]="true"
+                            [maxSize]="3"
+                            [boundaryLinks]="true"
+                            [previousText]="'&lsaquo;'"
+                            [nextText]="'&rsaquo;'"
+                            [firstText]="'&laquo;'"
+                            [lastText]="'&raquo;'"
+                            [itemsPerPage]="pager.pageSize"
+                            [totalItems]="totalItems">
+                    </pagination>
+                </div>
+            </div>
+        </div>
+    </div>
 </app-container>

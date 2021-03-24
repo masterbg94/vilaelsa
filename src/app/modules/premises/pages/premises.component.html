@@ -1,0 +1,52 @@
+<ngbox></ngbox>
+<app-header [headerImg]="img3" [headerTextBuilding]="'POSLOVNI PROSTOR , LOKALI'" [headerTextSubBuilding]="''"></app-header>
+<div class="container m-0 p-0">
+    <div class="row table">
+        <div class="col-sm-6">
+            <table class="table">
+                <thead>
+                <tr>
+                    <!--<th>{{'Number' | translate}}</th>-->
+                    <!--<th>{{'Parking' | translate}}</th>-->
+                    <th></th>
+                    <th>{{'Area' | translate}}</th>
+                    <th>{{'Status' | translate}}</th>
+                    <!--<th>{{'Orjentacija' | translate}}</th>-->
+                </tr>
+                </thead>
+                <tbody>
+                <tr *ngFor="let l of locals;let i = index" (click)="forwardData(l)">
+                    <!--<th>{{l?.apartmentNumber}}</th>-->
+                    <!--<th>{{l?.floorId}}</th>-->
+                    <th>Lokal {{i+1}}</th>
+                    <th>{{l?.area}} m²</th>
+                    <th>{{l?.status}}</th>
+                    <!--<th>{{l?.roomsNumber}}</th>-->
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-sm-6 right">
+            <!--<div class="para">
+                <p>
+                    {{'GarageElsaP1' | translate}}
+                </p>
+                <p>
+                    {{'GarageElsaP2' | translate}}
+                </p>
+                <button class="btn btn-gold" routerLink="/contact">{{'ReserveOnTime' | translate}}</button>
+            </div>-->
+            <div *ngIf="selectedLocal?.imgHailight"
+                 class="local-base"
+                 ng-box
+                 [src]="'../../../../assets/images/' + selectedLocal.imgHailight"
+                 [image]="true" [cache]="true"
+                 style="cursor: pointer;transition: 0.2s;">
+                <div class="search">
+                    <img class="searchIcon" src="../../../../assets/images/lupa.png">
+                </div>
+                <img [src]="'../../../../assets/images/' + selectedLocal.imgModel + '.png'">
+            </div>
+        </div>
+    </div>
+</div>
