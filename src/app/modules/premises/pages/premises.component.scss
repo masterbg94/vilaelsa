@@ -1,55 +1,59 @@
 @import "../../../styles/palette";
 
-.row.table {
-  margin: 0;
-  padding: 0;
+.premise-wrapper {
   background: $ve-black;
 
-  .local-base {
-    width: 100%;
-    height: 100% !important;
-    display: flex;
-    justify-content: center;
+  .row.table {
+    margin: 0;
+    padding: 0;
 
-    &:hover {
-      .search {
-        opacity: 1 !important;
+    .local-base {
+      width: 100%;
+      height: 100% !important;
+      display: flex;
+      justify-content: center;
+
+      &:hover {
+        .search {
+          opacity: 1 !important;
+        }
       }
-    }
 
-    img {
-      padding: 20px;
-      height: 500px;
-      //width: 100%;
+      img {
+        padding: 20px;
+        height: 500px;
+        //width: 100%;
 
-    }
+      }
 
-    .search {
-      width: 100px;
-      height: 100px;
-      background: rgba($ve-black, .7);
-      position: absolute;
-      z-index: 5;
-      top: 200px;
-      left: 250px;
-      padding: 20px;
-      cursor: pointer;
-      opacity: 0;
+      .search {
+        width: 100px;
+        height: 100px;
+        background: rgba($ve-black, .7);
+        position: absolute;
+        z-index: 5;
+        top: 200px;
+        left: 250px;
+        padding: 20px;
+        cursor: pointer;
+        opacity: 0;
 
-      .searchIcon {
-        width: 100%;
-        height: 100%;
-        background-size: cover;
-        transition: 0.4s;
-        padding: 0;
+        .searchIcon {
+          width: 100%;
+          height: 100%;
+          background-size: cover;
+          transition: 0.4s;
+          padding: 0;
 
-        &:hover {
-          transform: scale(1.2);
+          &:hover {
+            transform: scale(1.2);
+          }
         }
       }
     }
   }
 }
+
 
 table {
   margin-bottom: 0 !important;
